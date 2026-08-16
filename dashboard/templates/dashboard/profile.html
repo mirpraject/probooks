@@ -4,6 +4,14 @@
 {% block dashboard_content %}
 <div class="fade-in-up">
 
+{% if messages %}
+<div class="mb-3">
+    {% for msg in messages %}
+    <div class="alert alert-{{ msg.tags }}">{{ msg }}</div>
+    {% endfor %}
+</div>
+{% endif %}
+
 <!-- Шапка профиля -->
 <div class="profile-hero">
     <div class="avatar-xl">{{ user.last_name|slice:':1' }}{{ user.first_name|slice:':1' }}</div>
@@ -59,8 +67,18 @@
     </div>
 
     <div class="card">
+        <h2 class="mb-15"><i data-lucide="at-sign" class="icon-inline"></i> {% trans "Изменение логина" %}</h2>
+        <form method="post" action="{% url 'dashboard:change_login' %}">
+            {% csrf_token %}
+            <div class="flex flex-col gap-sm">
+                <input type="text" name="new_login" value="{{ user.login }}" placeholder="{% trans 'Новый логин' %}" required class="form-input">
+                <button class="btn btn-primary" type="submit"><i data-lucide="check" class="icon-sm"></i> {% trans "Изменить логин" %}</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card">
         <h2 class="mb-15"><i data-lucide="key-round" class="icon-inline"></i> {% trans "Смена пароля" %}</h2>
-        {% if password_error %}<div class="error mb-1">{{ password_error }}</div>{% endif %}
         <form method="post" action="{% url 'dashboard:change_password' %}">
             {% csrf_token %}
             <div class="flex flex-col gap-sm">

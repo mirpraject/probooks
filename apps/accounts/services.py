@@ -4,6 +4,7 @@ import string
 from django.contrib.auth import authenticate, login as django_login, logout as django_logout
 from django.contrib.auth.hashers import make_password
 from django.db import transaction
+from django.utils.translation import gettext as _
 
 from apps.accounts.models import User
 from apps.schools.models import Class
@@ -66,6 +67,7 @@ def create_user(role, first_name, last_name, school, grade=None, subject='', pas
         subject=subject,
     )
     user.set_password(password)
+    user.temp_password = password
     user.save()
     return user, password
 
@@ -74,8 +76,24 @@ def create_user(role, first_name, last_name, school, grade=None, subject='', pas
 def reset_password(user):
     new_password = generate_password()
     user.set_password(new_password)
+    user.temp_password = new_password
     user.save()
     return new_password
+
+
+@transaction.atomic
+def change_login(user, new_login):
+    new_login = (new_login or '').strip()
+    if not new_login:
+        return _('Логин не может быть пустым')
+    new_login = to_latin(new_login)
+    if not is_latin(new_login):
+        return _('Логин может содержать только латинские буквы, цифры и символы _-.')
+    if User.objects.filter(login=new_login).exclude(pk=user.pk).exists():
+        return _('Пользователь с таким логином уже существует')
+    user.login = new_login
+    user.save(update_fields=['login'])
+    return None
 
 
 def auth_login(request, login, password):

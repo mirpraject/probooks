@@ -29,6 +29,7 @@
         <div class="admin-info">
             <div class="admin-name">{{ a.last_name }} {{ a.first_name }}</div>
             <div class="admin-login">{{ a.login }}</div>
+            {% include 'dashboard/users/_pwd_chip.html' with user_obj=a %}
         </div>
         <form method="post" class="d-inline">
             {% csrf_token %}

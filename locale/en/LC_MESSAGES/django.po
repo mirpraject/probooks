@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-05 17:00+0500\n"
-"PO-Revision-Date: 2026-07-05 17:00+0500\n"
+"PO-Revision-Date: 2026-08-07 12:00+0500\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -15,53 +15,1294 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Вход в систему"
-msgstr "Login"
+msgid "%(c.grade_number)s кл."
+msgstr "%(c.grade_number)s grade"
 
-msgid "Логин"
-msgstr "Login"
+msgid "%(challenge.grade_number)s кл."
+msgstr "%(challenge.grade_number)s grade"
 
-msgid "Пароль"
-msgstr "Password"
+msgid "%(challenge.grade_number)s класс"
+msgstr "%(challenge.grade_number)s grade"
 
-msgid "Войти"
-msgstr "Sign in"
+msgid "%(challenge.questions|length)s вопросов"
+msgstr "%(challenge.questions|length)s questions"
 
-msgid "Главная"
-msgstr "Home"
+msgid "%(gn)s кл."
+msgstr "%(gn)s grade"
 
-msgid "Профиль"
-msgstr "Profile"
+msgid "%(selected.grade_number)s класс"
+msgstr "%(selected.grade_number)s grade"
 
-msgid "Выйти"
-msgstr "Log out"
+msgid "%(streak.current_streak)s дней"
+msgstr "%(streak.current_streak)s days"
 
-msgid "Пользователи"
-msgstr "Users"
+msgid "%(streak.frozen_days)s заморозок"
+msgstr "%(streak.frozen_days)s freezes"
 
-msgid "Учебники"
-msgstr "Textbooks"
+msgid "15 минут на 15 вопросов"
+msgstr "15 minutes for 15 questions"
 
-msgid "Книги"
-msgstr "Books"
+msgid "QR возврат учебников"
+msgstr "QR return of textbooks"
+
+msgid "QR для возврата"
+msgstr "QR for return"
+
+msgid "QR для выдачи"
+msgstr "QR for issue"
+
+msgid "QR-код для возврата"
+msgstr "QR code for return"
+
+msgid "QR-код для выдачи"
+msgstr "QR code for issue"
+
+msgid "QR-сканер"
+msgstr "QR scanner"
+
+msgid "QR-сканер — Библиотечная система"
+msgstr "QR scanner — Library System"
+
+msgid "XP до→после"
+msgstr "XP before→after"
+
+msgid "Авг"
+msgstr "Aug"
+
+msgid "Автор"
+msgstr "Author"
+
+msgid "Автор:"
+msgstr "Author:"
+
+msgid "Администраторы"
+msgstr "Administrators"
+
+msgid "Администраторы школ"
+msgstr "School administrators"
+
+msgid "Админы"
+msgstr "Admins"
+
+msgid "Аккаунт"
+msgstr "Account"
+
+msgid "Активация доступа 5 класса"
+msgstr "Access activation for grade 5"
+
+msgid "Активация доступа 5-го класса"
+msgstr "Access activation for grade 5"
+
+msgid "Активация доступа — 5 класс"
+msgstr "Access activation — grade 5"
+
+msgid "Активен"
+msgstr "Active"
+
+msgid "Активировать 5-й класс"
+msgstr "Activate grade 5"
+
+msgid "Активировать доступ для всех учеников 5 класса?"
+msgstr "Activate access for all grade 5 students?"
+
+msgid "Активировать и скачать Excel"
+msgstr "Activate and download Excel"
+
+msgid "Активности"
+msgstr "Activities"
+
+msgid "Активных выдач"
+msgstr "Active loans"
+
+msgid "Активных читателей"
+msgstr "Active readers"
+
+msgid "Английский"
+msgstr "English"
+
+msgid "Апр"
+msgstr "Apr"
+
+msgid "Баллы"
+msgstr "Points"
+
+msgid "Библиотека"
+msgstr "Library"
 
 msgid "Библиотечная система"
 msgstr "Library System"
 
-msgid "Добро пожаловать"
-msgstr "Welcome"
+msgid "Будет сгенерирован логин и пароль для всех учеников перешедших в 5 класс. Ученики будут включены в геймификацию. Excel с данными скачается автоматически."
+msgstr "A login and password will be generated for all students moving up to grade 5. Students will be included in gamification. An Excel file with the data will be downloaded automatically."
 
-msgid "Неверный логин или пароль"
-msgstr "Invalid login or password"
+msgid "Будет сгенерирован новый пароль. Excel-файл с паролем скачается автоматически. Все активные сессии будут завершены."
+msgstr "A new password will be generated. An Excel file with the password will be downloaded automatically. All active sessions will be terminated."
+
+msgid "Буква"
+msgstr "Letter"
+
+msgid "В библиотеке пока нет книг."
+msgstr "There are no books in the library yet."
+
+msgid "В каталог"
+msgstr "To the catalog"
+
+msgid "В классе нет учеников"
+msgstr "No students in the class"
+
+msgid "В корзине"
+msgstr "In the cart"
+
+msgid "В наличии"
+msgstr "Available"
+
+msgid "В школу"
+msgstr "To school"
+
+msgid "Вернуть выбранное"
+msgstr "Return selected"
+
+msgid "Вернуть учебники через QR"
+msgstr "Return textbooks via QR"
+
+msgid "Вернуться на главную"
+msgstr "Back to home"
+
+msgid "Взять"
+msgstr "Take"
+
+msgid "Взять книгу — Учитель"
+msgstr "Take a book — Teacher"
+
+msgid "Взять обычную книгу"
+msgstr "Take a regular book"
+
+msgid "Взять учебник (краткосрочно)"
+msgstr "Take a textbook (short-term)"
+
+msgid "Взять учебник — Учитель"
+msgstr "Take a textbook — Teacher"
+
+msgid "Возврат книг через QR"
+msgstr "Book return via QR"
+
+msgid "Возврат через QR"
+msgstr "Return via QR"
+
+msgid "Возвращено"
+msgstr "Returned"
+
+msgid "Войти"
+msgstr "Sign in"
+
+msgid "Вопрос"
+msgstr "Question"
+
+msgid "Вопросы (%(challenge.questions|length)s)"
+msgstr "Questions (%(challenge.questions|length)s)"
+
+msgid "Все"
+msgstr "All"
+
+msgid "Все должники"
+msgstr "All debtors"
+
+msgid "Все классы"
+msgstr "All classes"
+
+msgid "Все роли"
+msgstr "All roles"
+
+msgid "Все школы"
+msgstr "All schools"
+
+msgid "Всего учеников"
+msgstr "Total students"
+
+msgid "Всего экземпляров"
+msgstr "Total copies"
+
+msgid "Вход в систему"
+msgstr "Sign in"
+
+msgid "Вход в школьную библиотечную систему"
+msgstr "Sign in to the school library system"
+
+msgid "Вы уверены? Операция необратима!"
+msgstr "Are you sure? This operation cannot be undone!"
+
+msgid "Выберите класс"
+msgstr "Select a class"
+
+msgid "Выбранных позиций: <strong>%(count)s</strong>"
+msgstr "Selected items: <strong>%(count)s</strong>"
+
+msgid "Выбрано книг для возврата: <strong>%(selected_count)s</strong>"
+msgstr "Books selected for return: <strong>%(selected_count)s</strong>"
+
+msgid "Выдан"
+msgstr "Issued"
+
+msgid "Выдана"
+msgstr "Issued"
+
+msgid "Выдано"
+msgstr "Issued"
+
+msgid "Выдать"
+msgstr "Issue"
+
+msgid "Выдать все доступные"
+msgstr "Issue all available"
+
+msgid "Выдать всем"
+msgstr "Issue to all"
+
+msgid "Выдать выбранные"
+msgstr "Issue selected"
+
+msgid "Выдать классу"
+msgstr "Issue to the class"
+
+msgid "Выдать комплект"
+msgstr "Issue a set"
+
+msgid "Выдать комплект учебников всем ученикам выбранного класса одной операцией."
+msgstr "Issue a set of textbooks to all students of the selected class in one operation."
+
+msgid "Выдать одним QR"
+msgstr "Issue with one QR"
+
+msgid "Выдать учебники"
+msgstr "Issue textbooks"
+
+msgid "Выдать учебники всем ученикам класса?"
+msgstr "Issue textbooks to all students in the class?"
+
+msgid "Выдача учебников"
+msgstr "Textbook loans"
+
+msgid "Выдача учебников по нескольким классам"
+msgstr "Textbook loans for several classes"
+
+msgid "Выдача учебников — %(student.last_name)s %(student.first_name)s"
+msgstr "Textbook loans — %(student.last_name)s %(student.first_name)s"
+
+msgid "Выдача учебников — Библиотечная система"
+msgstr "Textbook loans — Library System"
+
+msgid "Выдачи"
+msgstr "Loans"
+
+msgid "Выдачи книг"
+msgstr "Book loans"
+
+msgid "Выдачи учебников"
+msgstr "Textbook loans"
+
+msgid "Выйти"
+msgstr "Log out"
+
+msgid "Генерирует логины и пароли для учеников 5-х классов, которые ранее были записями без доступа (1-4 класс). Включает их в геймификацию."
+msgstr "Generates logins and passwords for grade 5 students who were previously records without access (grades 1-4). Includes them in gamification."
+
+msgid "Главная"
+msgstr "Home"
+
+msgid "Главная — Библиотечная система"
+msgstr "Home — Library System"
+
+msgid "Год"
+msgstr "Year"
+
+msgid "Далее"
+msgstr "Next"
+
+msgid "Дата"
+msgstr "Date"
+
+msgid "Дашборд"
+msgstr "Dashboard"
+
+msgid "Дашборд суперадмина"
+msgstr "Superadmin dashboard"
+
+msgid "Действителен 2 минуты"
+msgstr "Valid for 2 minutes"
+
+msgid "Действия"
+msgstr "Actions"
+
+msgid "Дек"
+msgstr "Dec"
+
+msgid "Динамика по месяцам"
+msgstr "Monthly dynamics"
+
+msgid "Добавить"
+msgstr "Add"
+
+msgid "Добавить книгу"
+msgstr "Add a book"
+
+msgid "Добавить район"
+msgstr "Add a district"
+
+msgid "Добавить учебник"
+msgstr "Add a textbook"
+
+msgid "Добавьте книги из каталога."
+msgstr "Add books from the catalog."
+
+msgid "Добро пожаловать, %(user.first_name)s!"
+msgstr "Welcome, %(user.first_name)s!"
+
+msgid "Достижения"
+msgstr "Achievements"
 
 msgid "Доступ запрещён"
 msgstr "Access denied"
 
+msgid "Журнал продвижений"
+msgstr "Advancement log"
+
+msgid "Завершить"
+msgstr "Finish"
+
+msgid "Заголовок"
+msgstr "Title"
+
+msgid "Загрузите CSV-файл с колонками: <strong>ФИО</strong>, <strong>Класс</strong>"
+msgstr "Upload a CSV file with columns: <strong>Full name</strong>, <strong>Grade</strong>"
+
+msgid "Загрузите CSV-файл с колонками: <strong>ФИО</strong>, <strong>Предмет</strong>"
+msgstr "Upload a CSV file with columns: <strong>Full name</strong>, <strong>Subject</strong>"
+
+msgid "Загрузить и импортировать"
+msgstr "Upload and import"
+
+msgid "Закрыть"
+msgstr "Close"
+
+msgid "Зал достижений"
+msgstr "Achievement hall"
+
+msgid "Запустить"
+msgstr "Start"
+
+msgid "Запустить камеру"
+msgstr "Start camera"
+
+msgid "Из школы"
+msgstr "From school"
+
+msgid "Импорт CSV"
+msgstr "CSV import"
+
+msgid "Импорт учеников"
+msgstr "Student import"
+
+msgid "Импорт учителей"
+msgstr "Teacher import"
+
+msgid "Импортировать учеников"
+msgstr "Import students"
+
+msgid "Имя"
+msgstr "First name"
+
+msgid "Инвентаризация"
+msgstr "Inventory"
+
+msgid "Инвентаризация — Библиотечная система"
+msgstr "Inventory — Library System"
+
+msgid "Инициировать уход"
+msgstr "Initiate transfer"
+
+msgid "Инициировать уход ученика?"
+msgstr "Initiate student transfer?"
+
+msgid "Инфо"
+msgstr "Info"
+
+msgid "Используется только когда самообслуживание через QR-код невозможно. Операция будет помечена в логе."
+msgstr "Used only when QR-code self-service is not possible. The operation will be logged."
+
+msgid "История переводов"
+msgstr "Transfer history"
+
+msgid "Июл"
+msgstr "Jul"
+
+msgid "Июн"
+msgstr "Jun"
+
+msgid "Каракалпакский"
+msgstr "Karakalpak"
+
+msgid "Каталог"
+msgstr "Catalog"
+
+msgid "Каталог — Библиотечная система"
+msgstr "Catalog — Library System"
+
+msgid "Категория"
+msgstr "Category"
+
+msgid "Класс"
+msgstr "Class"
+
+msgid "Классы"
+msgstr "Classes"
+
+msgid "Книг"
+msgstr "Books"
+
+msgid "Книг всего"
+msgstr "Books total"
+
+msgid "Книга"
+msgstr "Book"
+
+msgid "Книги"
+msgstr "Books"
+
+msgid "Книги — Библиотечная система"
+msgstr "Books — Library System"
+
+msgid "Количество экземпляров"
+msgstr "Number of copies"
+
+msgid "Контент"
+msgstr "Content"
+
+msgid "Корзина"
+msgstr "Cart"
+
+msgid "Корзина пуста"
+msgstr "Cart is empty"
+
+msgid "Корзина учебников"
+msgstr "Textbook cart"
+
+msgid "Корзина — Библиотечная система"
+msgstr "Cart — Library System"
+
+msgid "Кто"
+msgstr "Who"
+
+msgid "Лидерборд челленджей"
+msgstr "Challenge leaderboard"
+
+msgid "Лидерборд школы"
+msgstr "School leaderboard"
+
+msgid "Логин"
+msgstr "Login"
+
+msgid "Май"
+msgstr "May"
+
+msgid "Мар"
+msgstr "Mar"
+
+msgid "Массовая выдача"
+msgstr "Bulk issue"
+
+msgid "Массовая выдача учебников классу"
+msgstr "Bulk textbook issue to a class"
+
+msgid "Массовая выдача учителю"
+msgstr "Bulk issue to a teacher"
+
+msgid "Массовая выдача — классу"
+msgstr "Bulk issue — to a class"
+
+msgid "Массовый импорт учеников"
+msgstr "Bulk student import"
+
+msgid "Массовый импорт учителей"
+msgstr "Bulk teacher import"
+
+msgid "Младшие (1-4)"
+msgstr "Primary (1-4)"
+
+msgid "Младшие классы (1-4)"
+msgstr "Primary grades (1-4)"
+
+msgid "Модерация челленджа"
+msgstr "Challenge moderation"
+
+msgid "Модерация челленджей"
+msgstr "Challenges moderation"
+
+msgid "Модерация челленджей — Библиотечная система"
+msgstr "Challenges moderation — Library System"
+
+msgid "Мои"
+msgstr "Mine"
+
+msgid "Мои выдачи"
+msgstr "My loans"
+
+msgid "Мои выдачи — Библиотечная система"
+msgstr "My loans — Library System"
+
+msgid "Мои классы"
+msgstr "My classes"
+
+msgid "Моё"
+msgstr "My"
+
+msgid "На главную"
+msgstr "Back to home"
+
+msgid "На руках"
+msgstr "On hand"
+
+msgid "Наведите камеру на QR-код..."
+msgstr "Point the camera at the QR code..."
+
+msgid "Нажмите «Запустить камеру», затем наведите камеру на QR-код"
+msgstr "Press «Start camera», then point the camera at the QR code"
+
+msgid "Назад"
+msgstr "Back"
+
+msgid "Название"
+msgstr "Title"
+
+msgid "Наличие по школам"
+msgstr "Availability by school"
+
+msgid "Начать челлендж"
+msgstr "Start challenge"
+
+msgid "Наш робот уже выехал с гаечным ключом чинить сервер. Пожалуйста, попробуйте зайти попозже."
+msgstr "Our robot is already on its way with a wrench to fix the server. Please try again later."
+
+msgid "Неактивен"
+msgstr "Inactive"
+
+msgid "Недельный челлендж"
+msgstr "Weekly challenge"
+
+msgid "Неделя %(challenge.week_start)s"
+msgstr "Week of %(challenge.week_start)s"
+
+msgid "Нет администратора"
+msgstr "No administrator"
+
+msgid "Нет администраторов"
+msgstr "No administrators"
+
+msgid "Нет активных выдач"
+msgstr "No active loans"
+
+msgid "Нет в наличии"
+msgstr "Not available"
+
+msgid "Нет вариантов"
+msgstr "No options"
+
+msgid "Нет вопросов"
+msgstr "No questions"
+
+msgid "Нет выдач"
+msgstr "No loans"
+
+msgid "Нет выдач учебников"
+msgstr "No textbook loans"
+
+msgid "Нет данных"
+msgstr "No data"
+
+msgid "Нет достижений"
+msgstr "No achievements"
+
+msgid "Нет доступа"
+msgstr "No access"
+
+msgid "Нет доступных классов"
+msgstr "No available classes"
+
+msgid "Нет классов"
+msgstr "No classes"
+
+msgid "Нет книг"
+msgstr "No books"
+
+msgid "Нет книг для возврата"
+msgstr "No books to return"
+
+msgid "Нет книг для отображения"
+msgstr "No books to display"
+
+msgid "Нет новостей"
+msgstr "No news"
+
+msgid "Нет опубликованных челленджей"
+msgstr "No published challenges"
+
+msgid "Нет пользователей"
+msgstr "No users"
+
+msgid "Нет привязанных классов"
+msgstr "No linked classes"
+
+msgid "Нет просрочек"
+msgstr "No overdue items"
+
+msgid "Нет районов"
+msgstr "No districts"
+
+msgid "Нет результатов"
+msgstr "No results"
+
+msgid "Нет уведомлений"
+msgstr "No notifications"
+
+msgid "Нет учебников"
+msgstr "No textbooks"
+
+msgid "Нет учебников в комплекте класса"
+msgstr "No textbooks in the class set"
+
+msgid "Нет учебников для возврата"
+msgstr "No textbooks to return"
+
+msgid "Нет учеников"
+msgstr "No students"
+
+msgid "Нет учеников 1-4 класса"
+msgstr "No students in grades 1-4"
+
+msgid "Нет учителей"
+msgstr "No teachers"
+
+msgid "Нет челленджей на модерации"
+msgstr "No challenges awaiting moderation"
+
+msgid "Нет школ"
+msgstr "No schools"
+
+msgid "Нет школ в районе"
+msgstr "No schools in the district"
+
+msgid "Нет школ. Создайте район и школу."
+msgstr "No schools. Create a district and a school."
+
+msgid "Новости"
+msgstr "News"
+
+msgid "Новости вашей школы будут появляться здесь."
+msgstr "News of your school will appear here."
+
+msgid "Новые челленджи генерируются автоматически по понедельникам."
+msgstr "New challenges are generated automatically every Monday."
+
+msgid "Номер (1-11)"
+msgstr "Number (1-11)"
+
+msgid "Ноя"
+msgstr "Nov"
+
+msgid "Обложка"
+msgstr "Cover"
+
+msgid "Ожидают приёма"
+msgstr "Awaiting admission"
+
+msgid "Ожидают ухода"
+msgstr "Awaiting transfer"
+
+msgid "Окт"
+msgstr "Oct"
+
+msgid "Опубликовать"
+msgstr "Publish"
+
+msgid "Опубликовать сразу"
+msgstr "Publish immediately"
+
+msgid "Отмена"
+msgstr "Cancel"
+
+msgid "Отметьте книги, которые хотите вернуть. Будет сгенерирован QR-код для библиотекаря."
+msgstr "Mark the books you want to return. A QR code will be generated for the librarian."
+
+msgid "Отметьте учебники для возврата:"
+msgstr "Mark the textbooks for return:"
+
+msgid "Оформить уход"
+msgstr "Complete the transfer"
+
 msgid "Ошибка"
 msgstr "Error"
+
+msgid "Ошибка доступа к камере. Проверьте разрешения в настройках браузера."
+msgstr "Camera access error. Check the permissions in your browser settings."
+
+msgid "Ошибка связи с сервером. Попробуйте снова."
+msgstr "Server connection error. Try again."
+
+msgid "Ошибка сервера"
+msgstr "Server error"
+
+msgid "Панель"
+msgstr "Panel"
+
+msgid "Панель суперадмина"
+msgstr "Superadmin panel"
+
+msgid "Пароль"
+msgstr "Password"
+
+msgid "Перевести"
+msgstr "Transfer"
+
+msgid "Перевести в школу..."
+msgstr "Transfer to school..."
+
+msgid "Перевести ученика в другой класс?"
+msgstr "Transfer the student to another class?"
+
+msgid "Переводит все классы школы на следующий год обучения. 11-е классы получают статус \"Выпускник\". Операция необратима и защищена от повторного запуска."
+msgstr "Promotes all school classes to the next academic year. Grade 11 classes get the \"Graduate\" status. The operation cannot be undone and is protected against repeated runs."
+
+msgid "Переводы"
+msgstr "Transfers"
+
+msgid "Переводы учеников между школами"
+msgstr "Student transfers between schools"
+
+msgid "Перезагрузить страницу"
+msgstr "Reload the page"
+
+msgid "Перейти в каталог"
+msgstr "Go to the catalog"
+
+msgid "Переключить тему"
+msgstr "Toggle theme"
+
+msgid "По вашему предмету пока нет учебников."
+msgstr "There are no textbooks for your subject yet."
+
+msgid "По классам"
+msgstr "By classes"
+
+msgid "Подтвердите приём учебников"
+msgstr "Confirm the receipt of textbooks"
+
+msgid "Подтвердить"
+msgstr "Confirm"
+
+msgid "Подтвердить бронирование"
+msgstr "Confirm booking"
+
+msgid "Подтвердить уход ученика?"
+msgstr "Confirm the student's transfer?"
+
+msgid "Поиск"
+msgstr "Search"
+
+msgid "Покажите этот код библиотекарю для сканирования"
+msgstr "Show this code to the librarian to scan"
+
+msgid "Показать все предметы"
+msgstr "Show all subjects"
+
+msgid "Пользователь:"
+msgstr "User:"
+
+msgid "После возврата останется: <strong>%(remaining)s</strong>"
+msgstr "After return will remain: <strong>%(remaining)s</strong>"
+
+msgid "Похоже, эта страница улетела в облака. Запрашиваемая страница не существует или была удалена."
+msgstr "It looks like this page has flown into the clouds. The requested page does not exist or has been removed."
+
+msgid "Предмет"
+msgstr "Subject"
+
+msgid "Предметы"
+msgstr "Subjects"
+
+msgid "Привязка к классам"
+msgstr "Linking to classes"
+
+msgid "Принудительный возврат"
+msgstr "Forced return"
+
+msgid "Принять"
+msgstr "Accept"
+
+msgid "Принять выбранные"
+msgstr "Accept selected"
+
+msgid "Принять учебники"
+msgstr "Accept textbooks"
+
+msgid "Принять учебники — %(student.last_name)s %(student.first_name)s"
+msgstr "Accept textbooks — %(student.last_name)s %(student.first_name)s"
+
+msgid "Принять ученика"
+msgstr "Accept the student"
+
+msgid "Принять ученика в школу?"
+msgstr "Accept the student into the school?"
+
+msgid "Принять ученика?"
+msgstr "Accept the student?"
+
+msgid "Прогресс до следующего уровня"
+msgstr "Progress to the next level"
+
+msgid "Продвижение"
+msgstr "Advancement"
+
+msgid "Продвижение классов"
+msgstr "Class advancement"
+
+msgid "Просмотреть"
+msgstr "View"
+
+msgid "Просроченные выдачи"
+msgstr "Overdue loans"
+
+msgid "Просрочено"
+msgstr "Overdue"
+
+msgid "Профиль"
+msgstr "Profile"
+
+msgid "Профиль — Библиотечная система"
+msgstr "Profile — Library System"
+
+msgid "Разное"
+msgstr "Miscellaneous"
+
+msgid "Район"
+msgstr "District"
+
+msgid "Район..."
+msgstr "District..."
+
+msgid "Районов"
+msgstr "Districts"
+
+msgid "Районы"
+msgstr "Districts"
+
+msgid "Распределение по категориям"
+msgstr "Distribution by category"
+
+msgid "Редактировать профиль"
+msgstr "Edit profile"
+
+msgid "Рейтинг"
+msgstr "Rating"
+
+msgid "Рейтинг школ (по среднему XP на ученика)"
+msgstr "School rating (by average XP per student)"
+
+msgid "Роль"
+msgstr "Role"
+
+msgid "Русский"
+msgstr "Russian"
+
+msgid "Сброс пароля"
+msgstr "Password reset"
+
+msgid "Сбросить пароль"
+msgstr "Reset password"
+
+msgid "Сбросить пароль и скачать Excel"
+msgstr "Reset password and download Excel"
+
+msgid "Сбросить пароль? Сессии пользователя будут завершены."
+msgstr "Reset password? The user's sessions will be terminated."
+
+msgid "Сгенерировать QR"
+msgstr "Generate QR"
+
+msgid "Сгенерировать QR для возврата"
+msgstr "Generate QR for return"
+
+msgid "Сгенерировать QR для выдачи"
+msgstr "Generate QR for issue"
+
+msgid "Сдал"
+msgstr "Handed in"
+
+msgid "Сен"
+msgstr "Sep"
+
+msgid "Скачать шаблон"
+msgstr "Download template"
+
+msgid "Скачать шаблон для учителей"
+msgstr "Download template for teachers"
+
+msgid "Скоро"
+msgstr "Soon"
+
+msgid "Скоро срок"
+msgstr "Due soon"
+
+msgid "Следующий год"
+msgstr "Next year"
+
+msgid "Смена пароля"
+msgstr "Password change"
+
+msgid "Сменить пароль"
+msgstr "Change password"
+
+msgid "Содержание"
+msgstr "Contents"
+
+msgid "Создайте первый класс"
+msgstr "Create the first class"
+
+msgid "Создать"
+msgstr "Create"
+
+msgid "Создать класс"
+msgstr "Create a class"
+
+msgid "Создать классы"
+msgstr "Create classes"
+
+msgid "Создать новость"
+msgstr "Create news"
+
+msgid "Сохранить"
+msgstr "Save"
+
+msgid "Сохранить черновик"
+msgstr "Save draft"
+
+msgid "Средний XP"
+msgstr "Average XP"
+
+msgid "Средний XP по школам"
+msgstr "Average XP by school"
+
+msgid "Срок"
+msgstr "Due date"
+
+msgid "Статус"
+msgstr "Status"
 
 msgid "Страница не найдена"
 msgstr "Page not found"
 
-msgid "На главную"
-msgstr "Home"
+msgid "Стрик"
+msgstr "Streak"
+
+msgid "Стрик:"
+msgstr "Streak:"
+
+msgid "Текущий год"
+msgstr "Current year"
+
+msgid "Токен:"
+msgstr "Token:"
+
+msgid "У вас нет активных выдач книг."
+msgstr "You have no active book loans."
+
+msgid "У вас нет активных выдач учебников."
+msgstr "You have no active textbook loans."
+
+msgid "У вас нет ключа от этой страницы. Если это ошибка, обратитесь к администратору школы."
+msgstr "You don't have the key to this page. If this is a mistake, contact the school administrator."
+
+msgid "У вас нет прикреплённых классов"
+msgstr "You have no attached classes"
+
+msgid "Уведомления"
+msgstr "Notifications"
+
+msgid "Удалить ученика из класса?"
+msgstr "Remove the student from the class?"
+
+msgid "Узбекский"
+msgstr "Uzbek"
+
+msgid "Управление"
+msgstr "Management"
+
+msgid "Ур. %(ul.level.number)s"
+msgstr "Lv. %(ul.level.number)s"
+
+msgid "Ур. %(user_entry.level.number)s"
+msgstr "Lv. %(user_entry.level.number)s"
+
+msgid "Уровень"
+msgstr "Level"
+
+msgid "Уровень:"
+msgstr "Level:"
+
+msgid "Учебник"
+msgstr "Textbook"
+
+msgid "Учебники"
+msgstr "Textbooks"
+
+msgid "Учебники (на 7 дней)"
+msgstr "Textbooks (for 7 days)"
+
+msgid "Учебников"
+msgstr "Textbooks"
+
+msgid "Учебников всего"
+msgstr "Textbooks total"
+
+msgid "Учебников: <strong>%(count)s</strong>"
+msgstr "Textbooks: <strong>%(count)s</strong>"
+
+msgid "Учебный год"
+msgstr "Academic year"
+
+msgid "Ученик"
+msgstr "Student"
+
+msgid "Ученики"
+msgstr "Students"
+
+msgid "Ученики — Библиотечная система"
+msgstr "Students — Library System"
+
+msgid "Учеников"
+msgstr "Students"
+
+msgid "Учителей"
+msgstr "Teachers"
+
+msgid "Учитель"
+msgstr "Teacher"
+
+msgid "Учителя"
+msgstr "Teachers"
+
+msgid "ФИО"
+msgstr "Full name"
+
+msgid "Фамилия"
+msgstr "Last name"
+
+msgid "Фев"
+msgstr "Feb"
+
+msgid "Фильтр"
+msgstr "Filter"
+
+msgid "Формат: JSON массив объектов с полями question, options (массив из 3), correct (0-2)"
+msgstr "Format: JSON array of objects with fields question, options (array of 3), correct (0-2)"
+
+msgid "Челлендж"
+msgstr "Challenge"
+
+msgid "Челлендж завершён!"
+msgstr "Challenge completed!"
+
+msgid "Челленджи"
+msgstr "Challenges"
+
+msgid "Челленджи появляются каждый понедельник."
+msgstr "Challenges appear every Monday."
+
+msgid "Черновик"
+msgstr "Draft"
+
+msgid "Читатели"
+msgstr "Readers"
+
+msgid "Что-то сломалось"
+msgstr "Something broke"
+
+msgid "Школ"
+msgstr "Schools"
+
+msgid "Школа"
+msgstr "School"
+
+msgid "Школы"
+msgstr "Schools"
+
+msgid "Школы и районы"
+msgstr "Schools and districts"
+
+msgid "Экспорт в Excel"
+msgstr "Export to Excel"
+
+msgid "Этот QR-код устарел, попросите ученика обновить его"
+msgstr "This QR code is outdated, ask the student to update it"
+
+msgid "Этот код принадлежит другой школе"
+msgstr "This code belongs to another school"
+
+msgid "Язык"
+msgstr "Language"
+
+msgid "Янв"
+msgstr "Jan"
+
+msgid "администраторов"
+msgstr "administrators"
+
+msgid "акт."
+msgstr "act."
+
+msgid "без класса"
+msgstr "without class"
+
+msgid "в наличии"
+msgstr "available"
+
+msgid "до"
+msgstr "to"
+
+msgid "или"
+msgstr "or"
+
+msgid "кл."
+msgstr "grade"
+
+msgid "класс"
+msgstr "class"
+
+msgid "нет"
+msgstr "no"
+
+msgid "осталось на руках после возврата: "
+msgstr "remaining on hand after return: "
+
+msgid "преп."
+msgstr "teacher"
+
+msgid "уч."
+msgstr "stud."
+
+msgid "школ"
+msgstr "schools"
+
+msgid "— без категории —"
+msgstr "— no category —"
+
+msgid "2025-2026"
+msgstr "2025-2026"
+
+msgid "Excel"
+msgstr "Excel"
+
+msgid "ID ученика"
+msgstr "Student ID"
+
+msgid "А"
+msgstr "A"
+
+msgid "Должники"
+msgstr "Debtors"
+
+msgid "Логин ученика"
+msgstr "Student login"
+
+msgid "Название района"
+msgstr "District name"
+
+msgid "Название школы"
+msgstr "School name"
+
+msgid "Новый пароль (мин. 6)"
+msgstr "New password (min 6)"
+
+msgid "Подтвердите пароль"
+msgstr "Confirm password"
+
+msgid "Поиск книг и учебников..."
+msgstr "Search books and textbooks..."
+
+msgid "Поиск по имени или логину..."
+msgstr "Search by name or login..."
+
+msgid "Поиск по названию или автору..."
+msgstr "Search by title or author..."
+
+msgid "Текущий пароль"
+msgstr "Current password"
+
+msgid "Убрать"
+msgstr "Remove"
+
+msgid "Удалить"
+msgstr "Remove"
+
+msgid "логин"
+msgstr "login"
+
+msgid "Учебники и книги"
+msgstr "Textbooks and books"
+
+msgid "Геймификация"
+msgstr "Gamification"
+
+msgid "Статистика"
+msgstr "Statistics"
+
+msgid "%(counter)s учебник к бронированию"
+msgid_plural "%(counter)s учебников к бронированию"
+msgstr[0] "%(counter)s textbook to reserve"
+msgstr[1] "%(counter)s textbooks to reserve"
+
+msgid "Показать пароль"
+msgstr "Show password"
+
+msgid "Копировать пароль"
+msgstr "Copy password"
+
+msgid "Изменение логина"
+msgstr "Change login"
+
+msgid "Текущий логин"
+msgstr "Current login"
+
+msgid "Новый логин"
+msgstr "New login"
+
+msgid "Изменить логин"
+msgstr "Change login"
+
+msgid "Логин:"
+msgstr "Login:"
+
+msgid "Логин не может быть пустым"
+msgstr "Login cannot be empty"
+
+msgid "Логин может содержать только латинские буквы, цифры и символы _-."
+msgstr "Login may contain only Latin letters, digits and _-. symbols"
+
+msgid "Пользователь с таким логином уже существует"
+msgstr "A user with this login already exists"
+
+msgid "Логин изменён: %(login)s"
+msgstr "Login changed: %(login)s"
+
+msgid "Неверный текущий пароль"
+msgstr "Current password is incorrect"
+
+msgid "Новый пароль слишком короткий (минимум 6 символов)"
+msgstr "New password is too short (minimum 6 characters)"
+
+msgid "Пароли не совпадают"
+msgstr "Passwords do not match"
+
+msgid "Пароль успешно изменён"
+msgstr "Password changed successfully"
+
+msgid "Логин изменён"
+msgstr "Login changed"

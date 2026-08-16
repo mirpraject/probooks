@@ -28,6 +28,7 @@ def create_school(name, district_id):
         school=school,
     )
     admin.set_password(admin_password)
+    admin.temp_password = admin_password
     admin.save()
 
     return school, admin, admin_password

@@ -34,6 +34,7 @@ class User(AbstractUser):
         verbose_name='Класс',
     )
     is_active_for_gamification = models.BooleanField(default=False, verbose_name='Участвует в геймификации')
+    temp_password = models.CharField(max_length=128, blank=True, default='', verbose_name='Последний сгенерированный пароль')
     transfer_status = models.CharField(
         max_length=20, blank=True, default='',
         choices=[

@@ -158,6 +158,29 @@ function toggleNotif(e) {
 document.addEventListener('click', function() {
     document.querySelector('.notif-bell')?.classList.remove('active');
 });
+function revealPwd(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el.dataset.shown === '1') {
+        el.textContent = '••••••••••••';
+        el.dataset.shown = '0';
+    } else {
+        el.textContent = el.dataset.pwd;
+        el.dataset.shown = '1';
+    }
+}
+function copyPwd(id, btn) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (navigator.clipboard) navigator.clipboard.writeText(el.dataset.pwd);
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<i data-lucide="check" class="icon-2xs"></i>';
+    if (window.lucide) lucide.createIcons();
+    setTimeout(function () {
+        btn.innerHTML = orig;
+        if (window.lucide) lucide.createIcons();
+    }, 1500);
+}
 </script>
 {% endwith %}
 {% endblock %}

@@ -2,28 +2,49 @@
 {% load i18n static %}
 {% block title %}{% trans "Вход в систему" %}{% endblock %}
 {% block content %}
-<div class="login-page">
-    <div class="login-container">
-        <div class="login-logo">
-            <img src="{% static 'images/logo.svg' %}" alt="Biblio" class="logo-img">
+<div class="login-page split">
+
+    <!-- Brand panel -->
+    <div class="login-brand-panel">
+        <div class="lbp-content">
+            <div class="lbp-logo">
+                <img src="{% static 'images/logo.svg' %}" alt="Biblio" class="logo-img">
+            </div>
+            <h1 class="lbp-brand">Biblio</h1>
+            <p class="lbp-tagline">{% trans "Вход в школьную библиотечную систему" %}</p>
+            <div class="lbp-illustration">
+                <img src="{% static 'images/illustrations/login.png' %}" alt="Illustration" loading="lazy">
+            </div>
+            <div class="lbp-features">
+                <span><i data-lucide="book-open" class="icon-inline"></i> {% trans "Учебники и книги" %}</span>
+                <span><i data-lucide="trophy" class="icon-inline"></i> {% trans "Геймификация" %}</span>
+                <span><i data-lucide="bar-chart-3" class="icon-inline"></i> {% trans "Статистика" %}</span>
+            </div>
         </div>
-        <h1 class="login-brand">Biblio</h1>
-        <p class="login-desc">{% trans "Вход в школьную библиотечную систему" %}</p>
-        {% if error %}
-        <div class="error text-center mb-2">{{ error }}</div>
-        {% endif %}
-        <form method="post" action="{% url 'accounts:login_submit' %}" class="login-form">
-            {% csrf_token %}
-            <div class="form-group">
-                <label class="form-label">{% trans "Логин" %}</label>
-                <input type="text" name="login" class="form-input" required autocomplete="username">
-            </div>
-            <div class="form-group">
-                <label class="form-label">{% trans "Пароль" %}</label>
-                <input type="password" name="password" class="form-input" required autocomplete="current-password">
-            </div>
-            <button type="submit" class="btn btn-primary w-full justify-center" style="font-size: 1.1rem; padding: 0.85rem;"><i data-lucide="log-in" class="icon-inline"></i> {% trans "Войти" %}</button>
-        </form>
     </div>
+
+    <!-- Form panel -->
+    <div class="login-panel">
+        <div class="login-container">
+            <h1 class="login-brand">Biblio</h1>
+            <p class="login-desc">{% trans "Вход в школьную библиотечную систему" %}</p>
+            {% if error %}
+            <div class="error text-center mb-2">{{ error }}</div>
+            {% endif %}
+            <form method="post" action="{% url 'accounts:login_submit' %}" class="login-form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label class="form-label">{% trans "Логин" %}</label>
+                    <input type="text" name="login" class="form-input" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">{% trans "Пароль" %}</label>
+                    <input type="password" name="password" class="form-input" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary w-full justify-center" style="font-size: 1.1rem; padding: 0.85rem;"><i data-lucide="log-in" class="icon-inline"></i> {% trans "Войти" %}</button>
+            </form>
+        </div>
+    </div>
+
 </div>
 {% endblock %}

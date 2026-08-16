@@ -1,0 +1,8 @@
+{% load i18n %}
+{% if user_obj.temp_password %}
+<div class="admin-cred">
+    <span class="admin-pwd" id="pwd-{{ user_obj.id }}" data-pwd="{{ user_obj.temp_password }}">••••••••••••</span>
+    <button type="button" class="icon-btn" onclick="revealPwd('pwd-{{ user_obj.id }}')" title="{% trans "Показать пароль" %}"><i data-lucide="eye" class="icon-2xs"></i></button>
+    <button type="button" class="icon-btn" onclick="copyPwd('pwd-{{ user_obj.id }}', this)" title="{% trans "Копировать пароль" %}"><i data-lucide="copy" class="icon-2xs"></i></button>
+</div>
+{% endif %}

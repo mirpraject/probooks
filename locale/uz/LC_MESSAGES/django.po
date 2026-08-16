@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-05 17:00+0500\n"
-"PO-Revision-Date: 2026-07-05 17:00+0500\n"
+"PO-Revision-Date: 2026-08-07 12:00+0500\n"
 "Last-Translator: \n"
 "Language-Team: Uzbek\n"
 "Language: uz\n"
@@ -15,53 +15,1293 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Вход в систему"
-msgstr "Tizimga kirish"
+msgid "%(c.grade_number)s кл."
+msgstr "%(c.grade_number)s-sinf"
 
-msgid "Логин"
-msgstr "Login"
+msgid "%(challenge.grade_number)s кл."
+msgstr "%(challenge.grade_number)s-sinf"
 
-msgid "Пароль"
-msgstr "Parol"
+msgid "%(challenge.grade_number)s класс"
+msgstr "%(challenge.grade_number)s-sinf"
 
-msgid "Войти"
-msgstr "Kirish"
+msgid "%(challenge.questions|length)s вопросов"
+msgstr "%(challenge.questions|length)s ta savol"
 
-msgid "Главная"
-msgstr "Bosh sahifa"
+msgid "%(gn)s кл."
+msgstr "%(gn)s-sinf"
 
-msgid "Профиль"
-msgstr "Profil"
+msgid "%(selected.grade_number)s класс"
+msgstr "%(selected.grade_number)s-sinf"
 
-msgid "Выйти"
-msgstr "Chiqish"
+msgid "%(streak.current_streak)s дней"
+msgstr "%(streak.current_streak)s kun"
 
-msgid "Пользователи"
-msgstr "Foydalanuvchilar"
+msgid "%(streak.frozen_days)s заморозок"
+msgstr "%(streak.frozen_days)s muzlatish"
 
-msgid "Учебники"
-msgstr "Darsliklar"
+msgid "15 минут на 15 вопросов"
+msgstr "15 savolga 15 daqiqa"
 
-msgid "Книги"
-msgstr "Kitoblar"
+msgid "QR возврат учебников"
+msgstr "Darsliklarni QR orqali qaytarish"
+
+msgid "QR для возврата"
+msgstr "Qaytarish uchun QR"
+
+msgid "QR для выдачи"
+msgstr "Berish uchun QR"
+
+msgid "QR-код для возврата"
+msgstr "Qaytarish uchun QR-kod"
+
+msgid "QR-код для выдачи"
+msgstr "Berish uchun QR-kod"
+
+msgid "QR-сканер"
+msgstr "QR-skaner"
+
+msgid "QR-сканер — Библиотечная система"
+msgstr "QR-skaner — Kutubxona tizimi"
+
+msgid "XP до→после"
+msgstr "XP oldin→keyin"
+
+msgid "Авг"
+msgstr "Avg"
+
+msgid "Автор"
+msgstr "Muallif"
+
+msgid "Автор:"
+msgstr "Muallif:"
+
+msgid "Администраторы"
+msgstr "Administratorlar"
+
+msgid "Администраторы школ"
+msgstr "Maktab administratorlari"
+
+msgid "Админы"
+msgstr "Adminlar"
+
+msgid "Аккаунт"
+msgstr "Akkaunt"
+
+msgid "Активация доступа 5 класса"
+msgstr "5-sinfga kirishni faollashtirish"
+
+msgid "Активация доступа 5-го класса"
+msgstr "5-sinfga kirishni faollashtirish"
+
+msgid "Активация доступа — 5 класс"
+msgstr "Kirishni faollashtirish — 5-sinf"
+
+msgid "Активен"
+msgstr "Faol"
+
+msgid "Активировать 5-й класс"
+msgstr "5-sinfni faollashtirish"
+
+msgid "Активировать доступ для всех учеников 5 класса?"
+msgstr "5-sinfning barcha o'quvchilari uchun kirishni faollashtirish kerakmi?"
+
+msgid "Активировать и скачать Excel"
+msgstr "Faollashtirish va Excel yuklab olish"
+
+msgid "Активности"
+msgstr "Faoliyatlar"
+
+msgid "Активных выдач"
+msgstr "Faol berilganlar"
+
+msgid "Активных читателей"
+msgstr "Faol o'quvchilar"
+
+msgid "Английский"
+msgstr "Ingliz tili"
+
+msgid "Апр"
+msgstr "Apr"
+
+msgid "Баллы"
+msgstr "Ballar"
+
+msgid "Библиотека"
+msgstr "Kutubxona"
 
 msgid "Библиотечная система"
 msgstr "Kutubxona tizimi"
 
-msgid "Добро пожаловать"
-msgstr "Xush kelibsiz"
+msgid "Будет сгенерирован логин и пароль для всех учеников перешедших в 5 класс. Ученики будут включены в геймификацию. Excel с данными скачается автоматически."
+msgstr "5-sinfga o'tgan barcha o'quvchilar uchun login va parol yaratiladi. O'quvchilar o'yinlashtirishga qo'shiladi. Ma'lumotlar bilan Excel fayli avtomatik yuklab olinadi."
 
-msgid "Неверный логин или пароль"
-msgstr "Noto'g'ri login yoki parol"
+msgid "Будет сгенерирован новый пароль. Excel-файл с паролем скачается автоматически. Все активные сессии будут завершены."
+msgstr "Yangi parol yaratiladi. Parol bilan Excel fayli avtomatik yuklab olinadi. Barcha faol sessiyalar tugatiladi."
+
+msgid "Буква"
+msgstr "Harf"
+
+msgid "В библиотеке пока нет книг."
+msgstr "Kutubxonada hozircha kitoblar yo'q."
+
+msgid "В каталог"
+msgstr "Katalogga"
+
+msgid "В классе нет учеников"
+msgstr "Sinfda o'quvchilar yo'q"
+
+msgid "В корзине"
+msgstr "Savatda"
+
+msgid "В наличии"
+msgstr "Mavjud"
+
+msgid "В школу"
+msgstr "Maktabga"
+
+msgid "Вернуть выбранное"
+msgstr "Tanlanganni qaytarish"
+
+msgid "Вернуть учебники через QR"
+msgstr "Darsliklarni QR orqali qaytarish"
+
+msgid "Вернуться на главную"
+msgstr "Bosh sahifaga qaytish"
+
+msgid "Взять"
+msgstr "Olish"
+
+msgid "Взять книгу — Учитель"
+msgstr "Kitob olish — O'qituvchi"
+
+msgid "Взять обычную книгу"
+msgstr "Oddiy kitob olish"
+
+msgid "Взять учебник (краткосрочно)"
+msgstr "Darslik olish (qisqa muddatga)"
+
+msgid "Взять учебник — Учитель"
+msgstr "Darslik olish — O'qituvchi"
+
+msgid "Возврат книг через QR"
+msgstr "Kitoblarni QR orqali qaytarish"
+
+msgid "Возврат через QR"
+msgstr "QR orqali qaytarish"
+
+msgid "Возвращено"
+msgstr "Qaytarildi"
+
+msgid "Войти"
+msgstr "Kirish"
+
+msgid "Вопрос"
+msgstr "Savol"
+
+msgid "Вопросы (%(challenge.questions|length)s)"
+msgstr "Savollar (%(challenge.questions|length)s)"
+
+msgid "Все"
+msgstr "Hammasi"
+
+msgid "Все должники"
+msgstr "Barcha qarzdorlar"
+
+msgid "Все классы"
+msgstr "Barcha sinflar"
+
+msgid "Все роли"
+msgstr "Barcha rollar"
+
+msgid "Все школы"
+msgstr "Barcha maktablar"
+
+msgid "Всего учеников"
+msgstr "Jami o'quvchilar"
+
+msgid "Всего экземпляров"
+msgstr "Jami nusxalar"
+
+msgid "Вход в систему"
+msgstr "Tizimga kirish"
+
+msgid "Вход в школьную библиотечную систему"
+msgstr "Maktab kutubxona tizimiga kirish"
+
+msgid "Вы уверены? Операция необратима!"
+msgstr "Ishonchingiz komilmi? Amaliyotni ortga qaytarib bo'lmaydi!"
+
+msgid "Выберите класс"
+msgstr "Sinfni tanlang"
+
+msgid "Выбранных позиций: <strong>%(count)s</strong>"
+msgstr "Tanlangan pozitsiyalar: <strong>%(count)s</strong>"
+
+msgid "Выбрано книг для возврата: <strong>%(selected_count)s</strong>"
+msgstr "Qaytarish uchun tanlangan kitoblar: <strong>%(selected_count)s</strong>"
+
+msgid "Выдан"
+msgstr "Berildi"
+
+msgid "Выдана"
+msgstr "Berildi"
+
+msgid "Выдано"
+msgstr "Berildi"
+
+msgid "Выдать"
+msgstr "Berish"
+
+msgid "Выдать все доступные"
+msgstr "Barcha mavjudlarini berish"
+
+msgid "Выдать всем"
+msgstr "Hammaga berish"
+
+msgid "Выдать выбранные"
+msgstr "Tanlanganlarini berish"
+
+msgid "Выдать классу"
+msgstr "Sinfga berish"
+
+msgid "Выдать комплект"
+msgstr "To'plamni berish"
+
+msgid "Выдать комплект учебников всем ученикам выбранного класса одной операцией."
+msgstr "Tanlangan sinfning barcha o'quvchilariga darsliklar to'plamini bitta amaliyotda berish."
+
+msgid "Выдать одним QR"
+msgstr "Bitta QR bilan berish"
+
+msgid "Выдать учебники"
+msgstr "Darsliklarni berish"
+
+msgid "Выдать учебники всем ученикам класса?"
+msgstr "Sinfning barcha o'quvchilariga darsliklarni berish kerakmi?"
+
+msgid "Выдача учебников"
+msgstr "Darsliklar berilishi"
+
+msgid "Выдача учебников по нескольким классам"
+msgstr "Bir nechta sinflarga darsliklar berilishi"
+
+msgid "Выдача учебников — %(student.last_name)s %(student.first_name)s"
+msgstr "Darsliklar berilishi — %(student.last_name)s %(student.first_name)s"
+
+msgid "Выдача учебников — Библиотечная система"
+msgstr "Darsliklar berilishi — Kutubxona tizimi"
+
+msgid "Выдачи"
+msgstr "Berilganlar"
+
+msgid "Выдачи книг"
+msgstr "Kitoblar berilishi"
+
+msgid "Выдачи учебников"
+msgstr "Darsliklar berilishi"
+
+msgid "Выйти"
+msgstr "Chiqish"
+
+msgid "Генерирует логины и пароли для учеников 5-х классов, которые ранее были записями без доступа (1-4 класс). Включает их в геймификацию."
+msgstr "Ilgari kirishsiz yozuvlar bo'lgan (1-4-sinf) 5-sinf o'quvchilari uchun login va parollar yaratadi. Ularni o'yinlashtirishga qo'shadi."
+
+msgid "Главная"
+msgstr "Bosh sahifa"
+
+msgid "Главная — Библиотечная система"
+msgstr "Bosh sahifa — Kutubxona tizimi"
+
+msgid "Год"
+msgstr "Yil"
+
+msgid "Далее"
+msgstr "Keyingi"
+
+msgid "Дата"
+msgstr "Sana"
+
+msgid "Дашборд"
+msgstr "Boshqaruv paneli"
+
+msgid "Дашборд суперадмина"
+msgstr "Superadmin paneli"
+
+msgid "Действителен 2 минуты"
+msgstr "2 daqiqa amal qiladi"
+
+msgid "Действия"
+msgstr "Amallar"
+
+msgid "Дек"
+msgstr "Dek"
+
+msgid "Динамика по месяцам"
+msgstr "Oylar bo'yicha dinamika"
+
+msgid "Добавить"
+msgstr "Qo'shish"
+
+msgid "Добавить книгу"
+msgstr "Kitob qo'shish"
+
+msgid "Добавить район"
+msgstr "Tuman qo'shish"
+
+msgid "Добавить учебник"
+msgstr "Darslik qo'shish"
+
+msgid "Добавьте книги из каталога."
+msgstr "Katalogdan kitoblar qo'shing."
+
+msgid "Добро пожаловать, %(user.first_name)s!"
+msgstr "Xush kelibsiz, %(user.first_name)s!"
+
+msgid "Достижения"
+msgstr "Yutuqlar"
 
 msgid "Доступ запрещён"
 msgstr "Kirish taqiqlangan"
 
+msgid "Журнал продвижений"
+msgstr "Ko'chirishlar jurnali"
+
+msgid "Завершить"
+msgstr "Yakunlash"
+
+msgid "Заголовок"
+msgstr "Sarlavha"
+
+msgid "Загрузите CSV-файл с колонками: <strong>ФИО</strong>, <strong>Класс</strong>"
+msgstr "CSV-faylni ustunlar bilan yuklang: <strong>F.I.Sh.</strong>, <strong>Sinf</strong>"
+
+msgid "Загрузите CSV-файл с колонками: <strong>ФИО</strong>, <strong>Предмет</strong>"
+msgstr "CSV-faylni ustunlar bilan yuklang: <strong>F.I.Sh.</strong>, <strong>Fan</strong>"
+
+msgid "Загрузить и импортировать"
+msgstr "Yuklash va import qilish"
+
+msgid "Закрыть"
+msgstr "Yopish"
+
+msgid "Зал достижений"
+msgstr "Yutuqlar zali"
+
+msgid "Запустить"
+msgstr "Ishga tushirish"
+
+msgid "Запустить камеру"
+msgstr "Kamerani ishga tushirish"
+
+msgid "Из школы"
+msgstr "Maktabdan"
+
+msgid "Импорт CSV"
+msgstr "CSV import"
+
+msgid "Импорт учеников"
+msgstr "O'quvchilarni import qilish"
+
+msgid "Импорт учителей"
+msgstr "O'qituvchilarni import qilish"
+
+msgid "Импортировать учеников"
+msgstr "O'quvchilarni import qilish"
+
+msgid "Имя"
+msgstr "Ism"
+
+msgid "Инвентаризация"
+msgstr "Inventarizatsiya"
+
+msgid "Инвентаризация — Библиотечная система"
+msgstr "Inventarizatsiya — Kutubxona tizimi"
+
+msgid "Инициировать уход"
+msgstr "Ko'chishni boshlash"
+
+msgid "Инициировать уход ученика?"
+msgstr "O'quvchining ko'chishini boshlash kerakmi?"
+
+msgid "Инфо"
+msgstr "Ma'lumot"
+
+msgid "Используется только когда самообслуживание через QR-код невозможно. Операция будет помечена в логе."
+msgstr "Faqat QR-kod orqali o'z-o'ziga xizmat qilishning imkoni bo'lmaganda ishlatiladi. Amaliyot jurnalda belgilanadi."
+
+msgid "История переводов"
+msgstr "Ko'chirishlar tarixi"
+
+msgid "Июл"
+msgstr "Iyul"
+
+msgid "Июн"
+msgstr "Iyun"
+
+msgid "Каракалпакский"
+msgstr "Qoraqalpoq tili"
+
+msgid "Каталог"
+msgstr "Katalog"
+
+msgid "Каталог — Библиотечная система"
+msgstr "Katalog — Kutubxona tizimi"
+
+msgid "Категория"
+msgstr "Kategoriya"
+
+msgid "Класс"
+msgstr "Sinf"
+
+msgid "Классы"
+msgstr "Sinflar"
+
+msgid "Книг"
+msgstr "Kitoblar"
+
+msgid "Книг всего"
+msgstr "Jami kitoblar"
+
+msgid "Книга"
+msgstr "Kitob"
+
+msgid "Книги"
+msgstr "Kitoblar"
+
+msgid "Книги — Библиотечная система"
+msgstr "Kitoblar — Kutubxona tizimi"
+
+msgid "Количество экземпляров"
+msgstr "Nusxalar soni"
+
+msgid "Контент"
+msgstr "Kontent"
+
+msgid "Корзина"
+msgstr "Savat"
+
+msgid "Корзина пуста"
+msgstr "Savat bo'sh"
+
+msgid "Корзина учебников"
+msgstr "Darsliklar savati"
+
+msgid "Корзина — Библиотечная система"
+msgstr "Savat — Kutubxona tizimi"
+
+msgid "Кто"
+msgstr "Kim"
+
+msgid "Лидерборд челленджей"
+msgstr "Challengelar reytingi"
+
+msgid "Лидерборд школы"
+msgstr "Maktab reytingi"
+
+msgid "Логин"
+msgstr "Login"
+
+msgid "Май"
+msgstr "May"
+
+msgid "Мар"
+msgstr "Mar"
+
+msgid "Массовая выдача"
+msgstr "Ommaviy berish"
+
+msgid "Массовая выдача учебников классу"
+msgstr "Sinfga darsliklarni ommaviy berish"
+
+msgid "Массовая выдача учителю"
+msgstr "O'qituvchiga ommaviy berish"
+
+msgid "Массовая выдача — классу"
+msgstr "Ommaviy berish — sinfga"
+
+msgid "Массовый импорт учеников"
+msgstr "O'quvchilarni ommaviy import qilish"
+
+msgid "Массовый импорт учителей"
+msgstr "O'qituvchilarni ommaviy import qilish"
+
+msgid "Младшие (1-4)"
+msgstr "Boshlang'ich (1-4)"
+
+msgid "Младшие классы (1-4)"
+msgstr "Boshlang'ich sinflar (1-4)"
+
+msgid "Модерация челленджа"
+msgstr "Challenge moderatsiyasi"
+
+msgid "Модерация челленджей"
+msgstr "Challengelar moderatsiyasi"
+
+msgid "Модерация челленджей — Библиотечная система"
+msgstr "Challengelar moderatsiyasi — Kutubxona tizimi"
+
+msgid "Мои"
+msgstr "Mening"
+
+msgid "Мои выдачи"
+msgstr "Mening berilganlarim"
+
+msgid "Мои выдачи — Библиотечная система"
+msgstr "Mening berilganlarim — Kutubxona tizimi"
+
+msgid "Мои классы"
+msgstr "Mening sinflarim"
+
+msgid "Моё"
+msgstr "Mening"
+
+msgid "На главную"
+msgstr "Bosh sahifaga"
+
+msgid "На руках"
+msgstr "Qo'lda"
+
+msgid "Наведите камеру на QR-код..."
+msgstr "Kamerani QR-kodga qarating..."
+
+msgid "Нажмите «Запустить камеру», затем наведите камеру на QR-код"
+msgstr "«Kamerani ishga tushirish» tugmasini bosing, so'ng kamerani QR-kodga qarating"
+
+msgid "Назад"
+msgstr "Orqaga"
+
+msgid "Название"
+msgstr "Nomi"
+
+msgid "Наличие по школам"
+msgstr "Maktablar bo'yicha mavjudlik"
+
+msgid "Начать челлендж"
+msgstr "Challengeni boshlash"
+
+msgid "Наш робот уже выехал с гаечным ключом чинить сервер. Пожалуйста, попробуйте зайти попозже."
+msgstr "Robotimiz serverni ta'mirlash uchun kalit bilan allaqachon yo'lga chiqdi. Iltimos, keyinroq qayta urinib ko'ring."
+
+msgid "Неактивен"
+msgstr "Faol emas"
+
+msgid "Недельный челлендж"
+msgstr "Haftalik challenge"
+
+msgid "Неделя %(challenge.week_start)s"
+msgstr "%(challenge.week_start)s haftasi"
+
+msgid "Нет администратора"
+msgstr "Administrator yo'q"
+
+msgid "Нет администраторов"
+msgstr "Administratorlar yo'q"
+
+msgid "Нет активных выдач"
+msgstr "Faol berilganlar yo'q"
+
+msgid "Нет в наличии"
+msgstr "Mavjud emas"
+
+msgid "Нет вариантов"
+msgstr "Variantlar yo'q"
+
+msgid "Нет вопросов"
+msgstr "Savollar yo'q"
+
+msgid "Нет выдач"
+msgstr "Berilganlar yo'q"
+
+msgid "Нет выдач учебников"
+msgstr "Darsliklar berilishi yo'q"
+
+msgid "Нет данных"
+msgstr "Ma'lumot yo'q"
+
+msgid "Нет достижений"
+msgstr "Yutuqlar yo'q"
+
+msgid "Нет доступа"
+msgstr "Kirish yo'q"
+
+msgid "Нет доступных классов"
+msgstr "Mavjud sinflar yo'q"
+
+msgid "Нет классов"
+msgstr "Sinflar yo'q"
+
+msgid "Нет книг"
+msgstr "Kitoblar yo'q"
+
+msgid "Нет книг для возврата"
+msgstr "Qaytarish uchun kitoblar yo'q"
+
+msgid "Нет книг для отображения"
+msgstr "Ko'rsatish uchun kitoblar yo'q"
+
+msgid "Нет новостей"
+msgstr "Yangiliklar yo'q"
+
+msgid "Нет опубликованных челленджей"
+msgstr "E'lon qilingan challengelar yo'q"
+
+msgid "Нет пользователей"
+msgstr "Foydalanuvchilar yo'q"
+
+msgid "Нет привязанных классов"
+msgstr "Bog'langan sinflar yo'q"
+
+msgid "Нет просрочек"
+msgstr "Muddati o'tganlar yo'q"
+
+msgid "Нет районов"
+msgstr "Tumanlar yo'q"
+
+msgid "Нет результатов"
+msgstr "Natijalar yo'q"
+
+msgid "Нет уведомлений"
+msgstr "Bildirishnomalar yo'q"
+
+msgid "Нет учебников"
+msgstr "Darsliklar yo'q"
+
+msgid "Нет учебников в комплекте класса"
+msgstr "Sinf to'plamida darsliklar yo'q"
+
+msgid "Нет учебников для возврата"
+msgstr "Qaytarish uchun darsliklar yo'q"
+
+msgid "Нет учеников"
+msgstr "O'quvchilar yo'q"
+
+msgid "Нет учеников 1-4 класса"
+msgstr "1-4-sinf o'quvchilari yo'q"
+
+msgid "Нет учителей"
+msgstr "O'qituvchilar yo'q"
+
+msgid "Нет челленджей на модерации"
+msgstr "Moderatsiyada challengelar yo'q"
+
+msgid "Нет школ"
+msgstr "Maktablar yo'q"
+
+msgid "Нет школ в районе"
+msgstr "Tumanda maktablar yo'q"
+
+msgid "Нет школ. Создайте район и школу."
+msgstr "Maktablar yo'q. Tuman va maktab yarating."
+
+msgid "Новости"
+msgstr "Yangiliklar"
+
+msgid "Новости вашей школы будут появляться здесь."
+msgstr "Maktabingiz yangiliklari shu yerda paydo bo'ladi."
+
+msgid "Новые челленджи генерируются автоматически по понедельникам."
+msgstr "Yangi challengelar har dushanba avtomatik yaratiladi."
+
+msgid "Номер (1-11)"
+msgstr "Raqam (1-11)"
+
+msgid "Ноя"
+msgstr "Noy"
+
+msgid "Обложка"
+msgstr "Muqova"
+
+msgid "Ожидают приёма"
+msgstr "Qabulni kutmoqda"
+
+msgid "Ожидают ухода"
+msgstr "Ko'chishni kutmoqda"
+
+msgid "Окт"
+msgstr "Okt"
+
+msgid "Опубликовать"
+msgstr "E'lon qilish"
+
+msgid "Опубликовать сразу"
+msgstr "Darhol e'lon qilish"
+
+msgid "Отмена"
+msgstr "Bekor qilish"
+
+msgid "Отметьте книги, которые хотите вернуть. Будет сгенерирован QR-код для библиотекаря."
+msgstr "Qaytarmoqchi bo'lgan kitoblarni belgilang. Kutubxonachi uchun QR-kod yaratiladi."
+
+msgid "Отметьте учебники для возврата:"
+msgstr "Qaytarish uchun darsliklarni belgilang:"
+
+msgid "Оформить уход"
+msgstr "Ko'chishni rasmiylashtirish"
+
 msgid "Ошибка"
 msgstr "Xato"
+
+msgid "Ошибка доступа к камере. Проверьте разрешения в настройках браузера."
+msgstr "Kameraga kirishda xato. Brauzer sozlamalarida ruxsatlarni tekshiring."
+
+msgid "Ошибка связи с сервером. Попробуйте снова."
+msgstr "Server bilan bog'lanishda xato. Qayta urinib ko'ring."
+
+msgid "Ошибка сервера"
+msgstr "Server xatosi"
+
+msgid "Панель"
+msgstr "Panel"
+
+msgid "Панель суперадмина"
+msgstr "Superadmin paneli"
+
+msgid "Пароль"
+msgstr "Parol"
+
+msgid "Перевести"
+msgstr "Ko'chirish"
+
+msgid "Перевести в школу..."
+msgstr "Maktabga ko'chirish..."
+
+msgid "Перевести ученика в другой класс?"
+msgstr "O'quvchini boshqa sinfga ko'chirish kerakmi?"
+
+msgid "Переводит все классы школы на следующий год обучения. 11-е классы получают статус \"Выпускник\". Операция необратима и защищена от повторного запуска."
+msgstr "Maktabning barcha sinflarini keyingi o'quv yiliga o'tkazadi. 11-sinflar \"Bitiruvchi\" maqomini oladi. Amaliyotni ortga qaytarib bo'lmaydi va takroriy ishga tushirishdan himoyalangan."
+
+msgid "Переводы"
+msgstr "Ko'chirishlar"
+
+msgid "Переводы учеников между школами"
+msgstr "O'quvchilarning maktablar o'rtasida ko'chirilishi"
+
+msgid "Перезагрузить страницу"
+msgstr "Sahifani qayta yuklash"
+
+msgid "Перейти в каталог"
+msgstr "Katalogga o'tish"
+
+msgid "Переключить тему"
+msgstr "Mavzuni almashtirish"
+
+msgid "По вашему предмету пока нет учебников."
+msgstr "Faniz bo'yicha hozircha darsliklar yo'q."
+
+msgid "По классам"
+msgstr "Sinflar bo'yicha"
+
+msgid "Подтвердите приём учебников"
+msgstr "Darsliklarni qabul qilishni tasdiqlang"
+
+msgid "Подтвердить"
+msgstr "Tasdiqlash"
+
+msgid "Подтвердить бронирование"
+msgstr "Buyurtmani tasdiqlash"
+
+msgid "Подтвердить уход ученика?"
+msgstr "O'quvchining ko'chishini tasdiqlaysizmi?"
+
+msgid "Поиск"
+msgstr "Qidirish"
+
+msgid "Покажите этот код библиотекарю для сканирования"
+msgstr "Skanerlash uchun bu kodni kutubxonachiga ko'rsating"
+
+msgid "Показать все предметы"
+msgstr "Barcha fanlarni ko'rsatish"
+
+msgid "Пользователь:"
+msgstr "Foydalanuvchi:"
+
+msgid "После возврата останется: <strong>%(remaining)s</strong>"
+msgstr "Qaytarilgandan so'ng qoladi: <strong>%(remaining)s</strong>"
+
+msgid "Похоже, эта страница улетела в облака. Запрашиваемая страница не существует или была удалена."
+msgstr "Bu sahifa bulutlarga uchib ketganga o'xshaydi. So'ralgan sahifa mavjud emas yoki o'chirilgan."
+
+msgid "Предмет"
+msgstr "Fan"
+
+msgid "Предметы"
+msgstr "Fanlar"
+
+msgid "Привязка к классам"
+msgstr "Sinflarga bog'lash"
+
+msgid "Принудительный возврат"
+msgstr "Majburiy qaytarish"
+
+msgid "Принять"
+msgstr "Qabul qilish"
+
+msgid "Принять выбранные"
+msgstr "Tanlanganlarini qabul qilish"
+
+msgid "Принять учебники"
+msgstr "Darsliklarni qabul qilish"
+
+msgid "Принять учебники — %(student.last_name)s %(student.first_name)s"
+msgstr "Darsliklarni qabul qilish — %(student.last_name)s %(student.first_name)s"
+
+msgid "Принять ученика"
+msgstr "O'quvchini qabul qilish"
+
+msgid "Принять ученика в школу?"
+msgstr "O'quvchini maktabga qabul qilish kerakmi?"
+
+msgid "Принять ученика?"
+msgstr "O'quvchini qabul qilish kerakmi?"
+
+msgid "Прогресс до следующего уровня"
+msgstr "Keyingi darajagacha bo'lgan taraqqiyot"
+
+msgid "Продвижение"
+msgstr "Ko'tarish"
+
+msgid "Продвижение классов"
+msgstr "Sinflarni ko'tarish"
+
+msgid "Просмотреть"
+msgstr "Ko'rish"
+
+msgid "Просроченные выдачи"
+msgstr "Muddati o'tgan berilganlar"
+
+msgid "Просрочено"
+msgstr "Muddati o'tgan"
+
+msgid "Профиль"
+msgstr "Profil"
+
+msgid "Профиль — Библиотечная система"
+msgstr "Profil — Kutubxona tizimi"
+
+msgid "Разное"
+msgstr "Boshqa"
+
+msgid "Район"
+msgstr "Tuman"
+
+msgid "Район..."
+msgstr "Tuman..."
+
+msgid "Районов"
+msgstr "Tumanlar"
+
+msgid "Районы"
+msgstr "Tumanlar"
+
+msgid "Распределение по категориям"
+msgstr "Kategoriyalar bo'yicha taqsimot"
+
+msgid "Редактировать профиль"
+msgstr "Profilni tahrirlash"
+
+msgid "Рейтинг"
+msgstr "Reyting"
+
+msgid "Рейтинг школ (по среднему XP на ученика)"
+msgstr "Maktablar reytingi (o'quvchiga o'rtacha XP bo'yicha)"
+
+msgid "Роль"
+msgstr "Rol"
+
+msgid "Русский"
+msgstr "Rus tili"
+
+msgid "Сброс пароля"
+msgstr "Parolni tiklash"
+
+msgid "Сбросить пароль"
+msgstr "Parolni tiklash"
+
+msgid "Сбросить пароль и скачать Excel"
+msgstr "Parolni tiklash va Excel yuklab olish"
+
+msgid "Сбросить пароль? Сессии пользователя будут завершены."
+msgstr "Parolni tiklash kerakmi? Foydalanuvchining sessiyalari tugatiladi."
+
+msgid "Сгенерировать QR"
+msgstr "QR yaratish"
+
+msgid "Сгенерировать QR для возврата"
+msgstr "Qaytarish uchun QR yaratish"
+
+msgid "Сгенерировать QR для выдачи"
+msgstr "Berish uchun QR yaratish"
+
+msgid "Сдал"
+msgstr "Topsirdi"
+
+msgid "Сен"
+msgstr "Sen"
+
+msgid "Скачать шаблон"
+msgstr "Shablonni yuklab olish"
+
+msgid "Скачать шаблон для учителей"
+msgstr "O'qituvchilar uchun shablonni yuklab olish"
+
+msgid "Скоро"
+msgstr "Tez orada"
+
+msgid "Скоро срок"
+msgstr "Muddati yaqin"
+
+msgid "Следующий год"
+msgstr "Keyingi yil"
+
+msgid "Смена пароля"
+msgstr "Parolni o'zgartirish"
+
+msgid "Сменить пароль"
+msgstr "Parolni o'zgartirish"
+
+msgid "Содержание"
+msgstr "Mundarija"
+
+msgid "Создайте первый класс"
+msgstr "Birinchi sinfni yarating"
+
+msgid "Создать"
+msgstr "Yaratish"
+
+msgid "Создать класс"
+msgstr "Sinf yaratish"
+
+msgid "Создать классы"
+msgstr "Sinflar yaratish"
+
+msgid "Создать новость"
+msgstr "Yangilik yaratish"
+
+msgid "Сохранить"
+msgstr "Saqlash"
+
+msgid "Сохранить черновик"
+msgstr "Qoralama saqlash"
+
+msgid "Средний XP"
+msgstr "O'rtacha XP"
+
+msgid "Средний XP по школам"
+msgstr "Maktablar bo'yicha o'rtacha XP"
+
+msgid "Срок"
+msgstr "Muddat"
+
+msgid "Статус"
+msgstr "Holat"
 
 msgid "Страница не найдена"
 msgstr "Sahifa topilmadi"
 
-msgid "На главную"
-msgstr "Bosh sahifaga"
+msgid "Стрик"
+msgstr "Strik"
+
+msgid "Стрик:"
+msgstr "Strik:"
+
+msgid "Текущий год"
+msgstr "Joriy yil"
+
+msgid "Токен:"
+msgstr "Token:"
+
+msgid "У вас нет активных выдач книг."
+msgstr "Sizda faol kitob berilganlari yo'q."
+
+msgid "У вас нет активных выдач учебников."
+msgstr "Sizda faol darslik berilganlari yo'q."
+
+msgid "У вас нет ключа от этой страницы. Если это ошибка, обратитесь к администратору школы."
+msgstr "Bu sahifaga kalitingiz yo'q. Agar bu xato bo'lsa, maktab administratoriga murojaat qiling."
+
+msgid "У вас нет прикреплённых классов"
+msgstr "Sizda biriktirilgan sinflar yo'q"
+
+msgid "Уведомления"
+msgstr "Bildirishnomalar"
+
+msgid "Удалить ученика из класса?"
+msgstr "O'quvchini sinfdan o'chirish kerakmi?"
+
+msgid "Узбекский"
+msgstr "O'zbek tili"
+
+msgid "Управление"
+msgstr "Boshqaruv"
+
+msgid "Ур. %(ul.level.number)s"
+msgstr "Dar. %(ul.level.number)s"
+
+msgid "Ур. %(user_entry.level.number)s"
+msgstr "Dar. %(user_entry.level.number)s"
+
+msgid "Уровень"
+msgstr "Daraja"
+
+msgid "Уровень:"
+msgstr "Daraja:"
+
+msgid "Учебник"
+msgstr "Darslik"
+
+msgid "Учебники"
+msgstr "Darsliklar"
+
+msgid "Учебники (на 7 дней)"
+msgstr "Darsliklar (7 kunga)"
+
+msgid "Учебников"
+msgstr "Darsliklar"
+
+msgid "Учебников всего"
+msgstr "Jami darsliklar"
+
+msgid "Учебников: <strong>%(count)s</strong>"
+msgstr "Darsliklar: <strong>%(count)s</strong>"
+
+msgid "Учебный год"
+msgstr "O'quv yili"
+
+msgid "Ученик"
+msgstr "O'quvchi"
+
+msgid "Ученики"
+msgstr "O'quvchilar"
+
+msgid "Ученики — Библиотечная система"
+msgstr "O'quvchilar — Kutubxona tizimi"
+
+msgid "Учеников"
+msgstr "O'quvchilar"
+
+msgid "Учителей"
+msgstr "O'qituvchilar"
+
+msgid "Учитель"
+msgstr "O'qituvchi"
+
+msgid "Учителя"
+msgstr "O'qituvchilar"
+
+msgid "ФИО"
+msgstr "F.I.Sh."
+
+msgid "Фамилия"
+msgstr "Familiya"
+
+msgid "Фев"
+msgstr "Fev"
+
+msgid "Фильтр"
+msgstr "Filtrlash"
+
+msgid "Формат: JSON массив объектов с полями question, options (массив из 3), correct (0-2)"
+msgstr "Format: question, options (3 ta massiv), correct (0-2) maydonlari bo'lgan obyektlarning JSON massivi"
+
+msgid "Челлендж"
+msgstr "Challenge"
+
+msgid "Челлендж завершён!"
+msgstr "Challenge yakunlandi!"
+
+msgid "Челленджи"
+msgstr "Challengelar"
+
+msgid "Челленджи появляются каждый понедельник."
+msgstr "Challengelar har dushanba paydo bo'ladi."
+
+msgid "Черновик"
+msgstr "Qoralama"
+
+msgid "Читатели"
+msgstr "Kitobxonlar"
+
+msgid "Что-то сломалось"
+msgstr "Nimadir buzildi"
+
+msgid "Школ"
+msgstr "Maktablar"
+
+msgid "Школа"
+msgstr "Maktab"
+
+msgid "Школы"
+msgstr "Maktablar"
+
+msgid "Школы и районы"
+msgstr "Maktablar va tumanlar"
+
+msgid "Экспорт в Excel"
+msgstr "Excelga eksport qilish"
+
+msgid "Этот QR-код устарел, попросите ученика обновить его"
+msgstr "Bu QR-kod eskirgan, o'quvchidan uni yangilashni so'rang"
+
+msgid "Этот код принадлежит другой школе"
+msgstr "Bu kod boshqa maktabga tegishli"
+
+msgid "Язык"
+msgstr "Til"
+
+msgid "Янв"
+msgstr "Yan"
+
+msgid "администраторов"
+msgstr "administratorlar"
+
+msgid "акт."
+msgstr "faol."
+
+msgid "без класса"
+msgstr "sinfsiz"
+
+msgid "в наличии"
+msgstr "mavjud"
+
+msgid "до"
+msgstr "gacha"
+
+msgid "или"
+msgstr "yoki"
+
+msgid "кл."
+msgstr "sinf."
+
+msgid "класс"
+msgstr "sinf"
+
+msgid "нет"
+msgstr "yo'q"
+
+msgid "осталось на руках после возврата: "
+msgstr "qaytarilgandan keyin qo'lda qoladi: "
+
+msgid "преп."
+msgstr "o'qit."
+
+msgid "уч."
+msgstr "o'quv."
+
+msgid "школ"
+msgstr "maktab"
+
+msgid "— без категории —"
+msgstr "— kategoryasiz —"
+
+msgid "2025-2026"
+msgstr "2025-2026"
+
+msgid "Excel"
+msgstr "Excel"
+
+msgid "ID ученика"
+msgstr "O'quvchi IDsi"
+
+msgid "А"
+msgstr "A"
+
+msgid "Должники"
+msgstr "Qarzdorlar"
+
+msgid "Логин ученика"
+msgstr "O'quvchi logini"
+
+msgid "Название района"
+msgstr "Tuman nomi"
+
+msgid "Название школы"
+msgstr "Maktab nomi"
+
+msgid "Новый пароль (мин. 6)"
+msgstr "Yangi parol (kamida 6)"
+
+msgid "Подтвердите пароль"
+msgstr "Parolni tasdiqlang"
+
+msgid "Поиск книг и учебников..."
+msgstr "Kitoblar va darsliklarni qidirish..."
+
+msgid "Поиск по имени или логину..."
+msgstr "Ism yoki login bo'yicha qidirish..."
+
+msgid "Поиск по названию или автору..."
+msgstr "Nomi yoki muallifi bo'yicha qidirish..."
+
+msgid "Текущий пароль"
+msgstr "Joriy parol"
+
+msgid "Убрать"
+msgstr "Olib tashlash"
+
+msgid "Удалить"
+msgstr "O'chirish"
+
+msgid "логин"
+msgstr "login"
+
+msgid "Учебники и книги"
+msgstr "Darsliklar va kitoblar"
+
+msgid "Геймификация"
+msgstr "O'yinlashtirish"
+
+msgid "Статистика"
+msgstr "Statistika"
+
+msgid "%(counter)s учебник к бронированию"
+msgid_plural "%(counter)s учебников к бронированию"
+msgstr[0] "%(counter)s ta darslik bronlash uchun"
+
+msgid "Показать пароль"
+msgstr "Parolni ko'rsatish"
+
+msgid "Копировать пароль"
+msgstr "Parolni nusxalash"
+
+msgid "Изменение логина"
+msgstr "Loginni o'zgartirish"
+
+msgid "Текущий логин"
+msgstr "Joriy login"
+
+msgid "Новый логин"
+msgstr "Yangi login"
+
+msgid "Изменить логин"
+msgstr "Loginni o'zgartirish"
+
+msgid "Логин:"
+msgstr "Login:"
+
+msgid "Логин не может быть пустым"
+msgstr "Login bo'sh bo'lishi mumkin emas"
+
+msgid "Логин может содержать только латинские буквы, цифры и символы _-."
+msgstr "Login faqat lotin harflari, raqamlar va _-. belgilaridan iborat bo'lishi mumkin"
+
+msgid "Пользователь с таким логином уже существует"
+msgstr "Bunday loginli foydalanuvchi allaqachon mavjud"
+
+msgid "Логин изменён: %(login)s"
+msgstr "Login o'zgartirildi: %(login)s"
+
+msgid "Неверный текущий пароль"
+msgstr "Joriy parol noto'g'ri"
+
+msgid "Новый пароль слишком короткий (минимум 6 символов)"
+msgstr "Yangi parol juda qisqa (kamida 6 ta belgi)"
+
+msgid "Пароли не совпадают"
+msgstr "Parollar mos kelmaydi"
+
+msgid "Пароль успешно изменён"
+msgstr "Parol muvaffaqiyatli o'zgartirildi"
+
+msgid "Логин изменён"
+msgstr "Login o'zgartirildi"

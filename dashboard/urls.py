@@ -33,6 +33,7 @@ urlpatterns = [
     path('catalog/', views.student_catalog, name='student_catalog'),
     path('profile/edit/', views.edit_profile, name='edit_profile'),
     path('profile/change-password/', views.change_password, name='change_password'),
+    path('profile/change-login/', views.change_login, name='change_login'),
     path('loans/my/', views.my_loans, name='my_loans'),
     path('inventory/', views.inventory, name='inventory'),
     path('superadmin/', views.superadmin_dashboard, name='superadmin'),

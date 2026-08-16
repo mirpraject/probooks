@@ -1,6 +1,6 @@
 # Auto-reexport all view functions for backward compatibility with urls.py
 from dashboard.views.home import home
-from dashboard.views.profile import profile, edit_profile, change_password, award_freeze_view
+from dashboard.views.profile import profile, edit_profile, change_password, change_login, award_freeze_view
 from dashboard.views.users import (
     users_list, student_detail, reset_password_view, activate_grade_5_view,
     import_csv_view, import_teachers_csv, manage_young_students, homeroom_dashboard,

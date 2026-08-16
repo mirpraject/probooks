@@ -23,18 +23,19 @@
 <div class="table-wrap">
     <table>
         <thead>
-            <tr><th>{% trans "ФИО" %}</th><th>{% trans "Логин" %}</th><th>{% trans "Школа" %}</th><th>{% trans "Статус" %}</th></tr>
+            <tr><th>{% trans "ФИО" %}</th><th>{% trans "Логин" %}</th><th>{% trans "Пароль" %}</th><th>{% trans "Школа" %}</th><th>{% trans "Статус" %}</th></tr>
         </thead>
         <tbody>
             {% for u in users %}
             <tr>
                 <td><strong>{{ u.last_name }} {{ u.first_name }}</strong></td>
                 <td class="text-muted">{{ u.login }}</td>
+                <td>{% include 'dashboard/users/_pwd_chip.html' with user_obj=u %}</td>
                 <td>{{ u.school.name|default:"—" }}</td>
                 <td>{% if u.is_active %}<span class="badge badge-success">{% trans "Активен" %}</span>{% else %}<span class="badge badge-muted">{% trans "Неактивен" %}</span>{% endif %}</td>
             </tr>
             {% empty %}
-            <tr><td colspan="4" class="text-center text-muted p-3">
+            <tr><td colspan="5" class="text-center text-muted p-3">
                 <i data-lucide="users" class="icon-2xl icon-faded mb-1"></i>
                 <p>{% trans "Нет администраторов" %}</p>
             </td></tr>
@@ -74,13 +75,14 @@
 <div class="table-wrap">
     <table>
         <thead>
-            <tr><th>{% trans "ФИО" %}</th><th>{% trans "Логин" %}</th><th>{% trans "Роль" %}</th><th>{% trans "Класс" %}</th><th>{% trans "Статус" %}</th><th></th></tr>
+            <tr><th>{% trans "ФИО" %}</th><th>{% trans "Логин" %}</th><th>{% trans "Пароль" %}</th><th>{% trans "Роль" %}</th><th>{% trans "Класс" %}</th><th>{% trans "Статус" %}</th><th></th></tr>
         </thead>
         <tbody>
             {% for u in users %}
             <tr>
                 <td><strong>{{ u.last_name }} {{ u.first_name }}</strong></td>
                 <td class="text-muted">{{ u.login }}</td>
+                <td>{% include 'dashboard/users/_pwd_chip.html' with user_obj=u %}</td>
                 <td><span class="badge badge-info">{{ u.get_role_display }}</span></td>
                 <td>
                     {% if u.grade %}
@@ -93,7 +95,7 @@
                 </td>
             </tr>
             {% empty %}
-            <tr><td colspan="6" class="text-center text-muted p-3">
+            <tr><td colspan="7" class="text-center text-muted p-3">
                 <i data-lucide="users" class="icon-2xl icon-faded mb-1"></i>
                 <p>{% trans "Нет пользователей" %}</p>
                 <div class="flex justify-center gap-sm mt-1">

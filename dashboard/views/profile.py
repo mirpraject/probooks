@@ -50,19 +50,36 @@ def edit_profile(request):
 
 @login_required
 def change_password(request):
+    from django.contrib import messages
     if request.method == 'POST':
         old = request.POST.get('old_password', '')
         new = request.POST.get('new_password', '')
         confirm = request.POST.get('confirm_password', '')
         if not request.user.check_password(old):
-            return redirect('dashboard:profile')
-        if len(new) < 6:
-            return redirect('dashboard:profile')
-        if new != confirm:
-            return redirect('dashboard:profile')
-        request.user.set_password(new)
-        request.user.save()
-        from django.contrib.auth import update_session_auth_hash
-        update_session_auth_hash(request, request.user)
+            messages.error(request, _('Неверный текущий пароль'))
+        elif len(new) < 6:
+            messages.error(request, _('Новый пароль слишком короткий (минимум 6 символов)'))
+        elif new != confirm:
+            messages.error(request, _('Пароли не совпадают'))
+        else:
+            request.user.set_password(new)
+            request.user.temp_password = new
+            request.user.save()
+            from django.contrib.auth import update_session_auth_hash
+            update_session_auth_hash(request, request.user)
+            messages.success(request, _('Пароль успешно изменён'))
         return redirect('dashboard:profile')
+    return redirect('dashboard:profile')
+
+
+@login_required
+@require_POST
+def change_login(request):
+    from django.contrib import messages
+    from apps.accounts.services import change_login as service_change_login
+    error = service_change_login(request.user, request.POST.get('new_login', ''))
+    if error:
+        messages.error(request, error)
+    else:
+        messages.success(request, _('Логин изменён'))
     return redirect('dashboard:profile')

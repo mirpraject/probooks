@@ -7,6 +7,7 @@ class UserManager(BaseUserManager):
         extra_fields.pop('is_staff', None)
         user = self.model(login=login, **extra_fields)
         user.set_password(password)
+        user.temp_password = password or ''
         user.save(using=self._db)
         return user
 

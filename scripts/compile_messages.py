@@ -1,54 +1,93 @@
 """Compile .po files to .mo without gettext tools."""
 import os
-import re
 import struct
 
 LOCALE_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'locale')
 
 
+def _unesc(s):
+    return s.replace('\\n', '\n').replace('\\"', '"').replace('\\\\', '\\')
+
+
 def _parse_po(po_path):
-    """Parse .po file into list of (msgid, msgstr) tuples."""
+    """Parse .po file into a list of entry dicts.
+
+    Entry shape: {'msgid': str, 'msgid_plural': str|None, 'msgstrs': [str, ...]}
+    """
     with open(po_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
     entries = []
     current_id = []
-    current_str = []
+    current_plural_parts = []
+    has_plural = False
+    current_strs = []
     in_id = False
+    in_id_plural = False
     in_str = False
+
+    def flush():
+        if current_id or current_strs or has_plural:
+            entries.append({
+                'msgid': _unesc(''.join(current_id)),
+                'msgid_plural': _unesc(''.join(current_plural_parts)) if has_plural else None,
+                'msgstrs': [_unesc(v) for v in current_strs],
+            })
 
     for line in content.split('\n'):
         if line.startswith('msgid "'):
-            if current_id or current_str:
-                entries.append((''.join(current_id), ''.join(current_str)))
+            flush()
             current_id = []
-            current_str = []
-            val = line[7:-1]  # Extract value between quotes
-            current_id.append(val)
+            current_plural_parts = []
+            has_plural = False
+            current_strs = []
+            current_id.append(line[7:-1])
             in_id = True
+            in_id_plural = False
             in_str = False
+        elif line.startswith('msgid_plural "'):
+            in_id = False
+            in_id_plural = True
+            in_str = False
+            has_plural = True
+            current_plural_parts.append(line[14:-1])
+        elif line.startswith('msgstr['):
+            in_id = False
+            in_id_plural = False
+            in_str = True
+            idx = line.index(']')
+            val = line[idx + 2:-1]
+            current_strs.append(val)
         elif line.startswith('msgstr "'):
             in_id = False
+            in_id_plural = False
             in_str = True
-            val = line[8:-1]
-            current_str.append(val)
+            current_strs.append(line[8:-1])
         elif in_id and line.startswith('"'):
             current_id.append(line[1:-1])
+        elif in_id_plural and line.startswith('"'):
+            current_plural_parts.append(line[1:-1])
         elif in_str and line.startswith('"'):
-            current_str.append(line[1:-1])
+            current_strs[-1] = current_strs[-1] + line[1:-1]
         elif not line.startswith('"') and not line.startswith('#'):
             in_id = False
+            in_id_plural = False
             in_str = False
 
-    if current_id or current_str:
-        entries.append((''.join(current_id), ''.join(current_str)))
-    # Unescape C-style escapes (\\n -> \n, \\" -> \", \\\\ -> \\)
-    unescaped = []
-    for msgid, msgstr in entries:
-        msgid = msgid.replace('\\n', '\n').replace('\\"', '"').replace('\\\\', '\\')
-        msgstr = msgstr.replace('\\n', '\n').replace('\\"', '"').replace('\\\\', '\\')
-        unescaped.append((msgid, msgstr))
-    return unescaped
+    flush()
+    return entries
+
+
+def _id_bytes(entry):
+    if entry['msgid_plural'] is not None:
+        return (entry['msgid'] + '\x00' + entry['msgid_plural']).encode('utf-8')
+    return entry['msgid'].encode('utf-8')
+
+
+def _str_bytes(entry):
+    if entry['msgid_plural'] is not None:
+        return '\x00'.join(entry['msgstrs']).encode('utf-8')
+    return (entry['msgstrs'][0] if entry['msgstrs'] else '').encode('utf-8')
 
 
 def po_to_mo(po_path, mo_path):
@@ -60,21 +99,18 @@ def po_to_mo(po_path, mo_path):
     # Ensure empty msgid is first (catalog metadata)
     empty_entry = None
     non_empty = []
-    for msgid, msgstr in entries:
-        if msgid == '':
-            empty_entry = (msgid, msgstr)
+    for entry in entries:
+        if entry['msgid'] == '':
+            empty_entry = entry
         else:
-            non_empty.append((msgid, msgstr))
+            non_empty.append(entry)
     ordered = ([empty_entry] if empty_entry else []) + non_empty
 
-    ids = [msgid for msgid, _ in ordered]
-    strs = [msgstr for _, msgstr in ordered]
-    count = len(ids)
-
-    id_bytes = [k.encode('utf-8') for k in ids]
-    str_bytes = [v.encode('utf-8') for v in strs]
+    id_bytes = [_id_bytes(e) for e in ordered]
+    str_bytes = [_str_bytes(e) for e in ordered]
     id_lengths = [len(b) for b in id_bytes]
     str_lengths = [len(b) for b in str_bytes]
+    count = len(ordered)
 
     # .mo format (little-endian):
     # Header: magic(4) + version(4) + count(4) + orig_offset(4) + trans_offset(4) = 20 bytes
