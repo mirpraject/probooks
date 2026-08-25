@@ -182,7 +182,7 @@ AUTHENTICATION_BACKENDS = [
 
 # --- Axes ---
 TESTING = 'test' in sys.argv
-AXES_ENABLED = config('AXES_ENABLED', default=not DEBUG and not TESTING, cast=bool)
+AXES_ENABLED = config('AXES_ENABLED', default=False, cast=bool)
 AXES_FAILURE_LIMIT = 5
 AXES_COOLOFF_TIME = 1
 AXES_RESET_ON_SUCCESS = True
