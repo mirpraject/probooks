@@ -70,9 +70,9 @@ def login_form_view(request):
         remaining = max(0, limit - failures)
         
         if remaining > 0:
-            error_msg = _("Noto'g'ri login yoki parol. Yana %(count)s ta imkoniyat qoldi.") % {'count': remaining}
+            error_msg = _("Неверный логин или пароль. Осталось %(count)s попыток.") % {'count': remaining}
         else:
-            error_msg = _("Sizning profilingiz vaqtinchalik bloklandi. Iltimos 1 daqiqadan so'ng urinib ko'ring.")
+            error_msg = _("Ваш профиль временно заблокирован. Пожалуйста, попробуйте через 1 минуту.")
             
         return render(request, 'accounts/login.html', {'error': error_msg})
         

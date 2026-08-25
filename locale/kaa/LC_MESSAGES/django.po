@@ -1344,3 +1344,23 @@ msgstr "Sabaqlıqlar — Kitapxana sisteması"
 
 msgid "Всего"
 msgstr "Barlıǵı"
+
+
+msgid "Неверный логин или пароль. Осталось %(count)s попыток."
+msgstr "Natuwrı login yamasa parol. Jene %(count)s imkániyat qaldı."
+
+msgid "Ваш профиль временно заблокирован. Пожалуйста, попробуйте через 1 минуту."
+msgstr "Siziń profilińiz waqtınsha bloklandı. Iltimas 1 minuttan soń qayta kórip shıǵıń."
+
+msgid "Заблокировано"
+msgstr "Bloklanǵan"
+
+msgid "Временно заблокировано"
+msgstr "Waqtınsha bloklandı"
+
+msgid "Вы ввели неверный пароль слишком много раз. В целях безопасности аккаунт заблокирован на 1 минуту."
+msgstr "Siz kóp ret natuwrı parol kirittińiz. Qáwipsizlik maqsetinde akkaunt 1 minutqa bloklandı."
+
+msgid "Попробовать снова"
+msgstr "Qaytadan urinip kóriw"
+

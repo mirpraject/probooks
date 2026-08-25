@@ -1,15 +1,15 @@
 {% extends 'dashboard/base_auth.html' %}
 {% load i18n %}
 
-{% block title %}{% trans "Bloklangan" %}{% endblock %}
+{% block title %}{% trans "Заблокировано" %}{% endblock %}
 
 {% block content %}
 <div class="auth-card">
     <div class="auth-header">
-        <h2>{% trans "Vaqtinchalik bloklandi" %}</h2>
-        <p class="text-danger">{% trans "Siz ko'p marotaba noto'g'ri parol kiritdingiz. Xavfsizlik maqsadida akkaunt 1 daqiqaga bloklandi." %}</p>
+        <h2>{% trans "Временно заблокировано" %}</h2>
+        <p class="text-danger">{% trans "Вы ввели неверный пароль слишком много раз. В целях безопасности аккаунт заблокирован на 1 минуту." %}</p>
         <br>
-        <a href="{% url 'accounts:login' %}" class="btn btn-primary">{% trans "Qaytadan urinib ko'rish" %}</a>
+        <a href="{% url 'accounts:login' %}" class="btn btn-primary">{% trans "Попробовать снова" %}</a>
     </div>
 </div>
 {% endblock %}

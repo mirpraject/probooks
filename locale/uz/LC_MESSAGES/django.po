@@ -1344,3 +1344,23 @@ msgstr "Darsliklar — Kutubxona tizimi"
 
 msgid "Всего"
 msgstr "Jami"
+
+
+msgid "Неверный логин или пароль. Осталось %(count)s попыток."
+msgstr "Noto'g'ri login yoki parol. Yana %(count)s ta imkoniyat qoldi."
+
+msgid "Ваш профиль временно заблокирован. Пожалуйста, попробуйте через 1 минуту."
+msgstr "Sizning profilingiz vaqtinchalik bloklandi. Iltimos 1 daqiqadan so'ng urinib ko'ring."
+
+msgid "Заблокировано"
+msgstr "Bloklangan"
+
+msgid "Временно заблокировано"
+msgstr "Vaqtinchalik bloklandi"
+
+msgid "Вы ввели неверный пароль слишком много раз. В целях безопасности аккаунт заблокирован на 1 минуту."
+msgstr "Siz ko'p marotaba noto'g'ri parol kiritdingiz. Xavfsizlik maqsadida akkaunt 1 daqiqaga bloklandi."
+
+msgid "Попробовать снова"
+msgstr "Qaytadan urinib ko'rish"
+

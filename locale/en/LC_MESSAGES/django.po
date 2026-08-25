@@ -1345,3 +1345,23 @@ msgstr "Textbooks — Library System"
 
 msgid "Всего"
 msgstr "Total"
+
+
+msgid "Неверный логин или пароль. Осталось %(count)s попыток."
+msgstr "Invalid login or password. %(count)s attempts remaining."
+
+msgid "Ваш профиль временно заблокирован. Пожалуйста, попробуйте через 1 минуту."
+msgstr "Your profile is temporarily blocked. Please try again in 1 minute."
+
+msgid "Заблокировано"
+msgstr "Blocked"
+
+msgid "Временно заблокировано"
+msgstr "Temporarily blocked"
+
+msgid "Вы ввели неверный пароль слишком много раз. В целях безопасности аккаунт заблокирован на 1 минуту."
+msgstr "You have entered an incorrect password too many times. For security reasons, the account is blocked for 1 minute."
+
+msgid "Попробовать снова"
+msgstr "Try again"
+
