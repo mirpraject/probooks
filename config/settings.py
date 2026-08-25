@@ -10,7 +10,7 @@ DEBUG = config('DJANGO_DEBUG', default=True, cast=bool)
 
 if not DEBUG and SECRET_KEY == 'dev-only-insecure-key':
     raise RuntimeError("DJANGO_SECRET_KEY must be set when DEBUG=False")
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', default='localhost,127.0.0.1', cast=Csv())
+ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', default='localhost,127.0.0.1,elibrary-production-05af.up.railway.app', cast=Csv())
 
 INSTALLED_APPS = [
     'daphne',
