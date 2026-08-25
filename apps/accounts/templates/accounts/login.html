@@ -39,7 +39,13 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label">{% trans "Пароль" %}</label>
-                    <input type="password" name="password" class="form-input" required autocomplete="current-password">
+                    <div style="position: relative; display: flex; align-items: center;">
+                        <input type="password" id="password-input" name="password" class="form-input" required autocomplete="current-password" style="padding-right: 2.5rem; width: 100%;">
+                        <button type="button" id="toggle-password" style="position: absolute; right: 0.75rem; background: none; border: none; cursor: pointer; color: #64748b; padding: 0; display: flex; align-items: center; justify-content: center;" aria-label="Toggle password visibility">
+                            <i data-lucide="eye" id="icon-eye"></i>
+                            <i data-lucide="eye-off" id="icon-eye-off" style="display: none;"></i>
+                        </button>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary w-full justify-center" style="font-size: 1.1rem; padding: 0.85rem;"><i data-lucide="log-in" class="icon-inline"></i> {% trans "Войти" %}</button>
             </form>
@@ -47,4 +53,29 @@
     </div>
 
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const togglePassword = document.getElementById('toggle-password');
+        const passwordInput = document.getElementById('password-input');
+        
+        if (togglePassword && passwordInput) {
+            togglePassword.addEventListener('click', function(e) {
+                e.preventDefault();
+                const iconEye = document.getElementById('icon-eye');
+                const iconEyeOff = document.getElementById('icon-eye-off');
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                
+                passwordInput.setAttribute('type', type);
+                
+                if (type === 'password') {
+                    if (iconEye) iconEye.style.display = 'block';
+                    if (iconEyeOff) iconEyeOff.style.display = 'none';
+                } else {
+                    if (iconEye) iconEye.style.display = 'none';
+                    if (iconEyeOff) iconEyeOff.style.display = 'block';
+                }
+            });
+        }
+    });
+</script>
 {% endblock %}
