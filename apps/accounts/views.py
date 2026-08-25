@@ -3,7 +3,9 @@ from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
 from django.utils.translation import gettext as _
-
+from django.conf import settings
+from axes.models import AccessAttempt
+from axes.helpers import get_client_ip_address
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -59,8 +61,21 @@ def login_form_view(request):
     login = request.POST.get('login')
     password = request.POST.get('password')
     user = auth_login(request, login, password)
+    
     if user is None:
-        return render(request, 'accounts/login.html', {'error': _('Неверный логин или пароль')})
+        ip = get_client_ip_address(request)
+        attempt = AccessAttempt.objects.filter(username=login, ip_address=ip).first()
+        failures = attempt.failures_since_start if attempt else 1
+        limit = getattr(settings, 'AXES_FAILURE_LIMIT', 5)
+        remaining = max(0, limit - failures)
+        
+        if remaining > 0:
+            error_msg = _("Noto'g'ri login yoki parol. Yana %(count)s ta imkoniyat qoldi.") % {'count': remaining}
+        else:
+            error_msg = _("Sizning profilingiz vaqtinchalik bloklandi. Iltimos 1 daqiqadan so'ng urinib ko'ring.")
+            
+        return render(request, 'accounts/login.html', {'error': error_msg})
+        
     return redirect('dashboard:home')
 
 
