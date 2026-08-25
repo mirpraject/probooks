@@ -1305,3 +1305,42 @@ msgstr "Parol tabıslı ózgertirildi"
 
 msgid "Логин изменён"
 msgstr "Login ózgertirildi"
+
+msgid "Доступно"
+msgstr "Qoljetimli"
+
+msgid "Назначение учебников классам"
+msgstr "Sınıflarǵa sabaqlıqlardı biriktiriw"
+
+msgid "Нет назначений"
+msgstr "Biriktirilgenler joq"
+
+msgid "Математика"
+msgstr "Matematika"
+
+msgid "Остатки"
+msgstr "Остатки"
+
+msgid "Поиск по названию, предмету или автору..."
+msgstr "Ataması, páni yamasa avtorı boyınsha izlew..."
+
+msgid "Остатки учебников"
+msgstr "Sabaqlıqlar qaldıǵı"
+
+msgid "Нет остатков. Добавьте учебник через форму выше."
+msgstr "Qaldıqlar joq. Joqarıdaǵı forma arqalı sabaqlıq qosıń."
+
+msgid "Назначить"
+msgstr "Biriktiriw"
+
+msgid "Назначение учебников по предметам"
+msgstr "Pánler boyınsha sabaqlıqlardı biriktiriw"
+
+msgid "выберите"
+msgstr "saylań"
+
+msgid "Учебники — Библиотечная система"
+msgstr "Sabaqlıqlar — Kitapxana sisteması"
+
+msgid "Всего"
+msgstr "Barlıǵı"

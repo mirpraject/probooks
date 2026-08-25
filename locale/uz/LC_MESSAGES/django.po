@@ -1305,3 +1305,42 @@ msgstr "Parol muvaffaqiyatli o'zgartirildi"
 
 msgid "Логин изменён"
 msgstr "Login o'zgartirildi"
+
+msgid "Доступно"
+msgstr "Mavjud"
+
+msgid "Назначение учебников классам"
+msgstr "Darsliklarni sinflarga biriktirish"
+
+msgid "Нет назначений"
+msgstr "Biriktirilganlar yo'q"
+
+msgid "Математика"
+msgstr "Matematika"
+
+msgid "Остатки"
+msgstr "Остатки"
+
+msgid "Поиск по названию, предмету или автору..."
+msgstr "Nomi, fani yoki muallifi bo'yicha qidiruv..."
+
+msgid "Остатки учебников"
+msgstr "Darsliklar qoldig'i"
+
+msgid "Нет остатков. Добавьте учебник через форму выше."
+msgstr "Qoldiqlar yo'q. Yuqoridagi forma orqali darslik qo'shing."
+
+msgid "Назначить"
+msgstr "Biriktirish"
+
+msgid "Назначение учебников по предметам"
+msgstr "Darsliklarni fanlar bo'yicha biriktirish"
+
+msgid "выберите"
+msgstr "tanlang"
+
+msgid "Учебники — Библиотечная система"
+msgstr "Darsliklar — Kutubxona tizimi"
+
+msgid "Всего"
+msgstr "Jami"

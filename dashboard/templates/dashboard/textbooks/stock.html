@@ -1,19 +1,19 @@
 {% extends 'dashboard/base_dashboard.html' %}
 {% load i18n %}
-{% block title %}Остатки учебников{% endblock %}
+{% block title %}{% trans "Остатки учебников" %}{% endblock %}
 {% block dashboard_content %}
-<div class="page-header"><h1><i data-lucide="package" class="icon-xl icon-primary"></i> Остатки учебников</h1></div>
+<div class="page-header"><h1><i data-lucide="package" class="icon-xl icon-primary"></i> {% trans "Остатки учебников" %}</h1></div>
 <form method="post" class="card mb-3 p-3">
     {% csrf_token %}
     <div class="flex gap-sm items-end flex-wrap">
-        <div><label class="form-label">Учебник</label><select name="textbook_id" class="form-input" required><option value="">— выберите —</option>{% for tb in textbooks %}<option value="{{ tb.id }}">{{ tb.title }} ({{ tb.subject }}, {{ tb.grade_number }} кл.)</option>{% empty %}<option value="" disabled>{% trans "Нет учебников" %}</option>{% endfor %}</select></div>
-        <div><label class="form-label">Всего экземпляров</label><input name="total_copies" type="number" min="0" class="form-input w-100" required></div>
-        <div><button class="btn btn-primary" type="submit">Сохранить</button></div>
+        <div><label class="form-label">{% trans "Учебник" %}</label><select name="textbook_id" class="form-input" required><option value="">— {% trans "выберите" %} —</option>{% for tb in textbooks %}<option value="{{ tb.id }}">{{ tb.title }} ({{ tb.subject }}, {% blocktranslate with grade=tb.grade_number %}{{ grade }} кл.{% endblocktranslate %})</option>{% empty %}<option value="" disabled>{% trans "Нет учебников" %}</option>{% endfor %}</select></div>
+        <div><label class="form-label">{% trans "Всего экземпляров" %}</label><input name="total_copies" type="number" min="0" class="form-input w-100" required></div>
+        <div><button class="btn btn-primary" type="submit">{% trans "Сохранить" %}</button></div>
     </div>
 </form>
 <div class="card overflow-x-auto">
     <table>
-        <thead><tr><th>Учебник</th><th>Предмет</th><th class="text-right">Всего</th><th class="text-right">Доступно</th></tr></thead>
+        <thead><tr><th>{% trans "Учебник" %}</th><th>{% trans "Предмет" %}</th><th class="text-right">{% trans "Всего" %}</th><th class="text-right">{% trans "Доступно" %}</th></tr></thead>
         <tbody>
             {% for s in stocks %}
             <tr>
@@ -23,7 +23,7 @@
                 <td class="text-right">{{ s.available_copies }}</td>
             </tr>
             {% empty %}
-            <tr><td colspan="4" class="text-center text-muted p-3">Нет остатков. Добавьте учебник через форму выше.</td></tr>
+            <tr><td colspan="4" class="text-center text-muted p-3">{% trans "Нет остатков. Добавьте учебник через форму выше." %}</td></tr>
             {% endfor %}
         </tbody>
     </table>

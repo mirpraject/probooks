@@ -1306,3 +1306,42 @@ msgstr "Password changed successfully"
 
 msgid "Логин изменён"
 msgstr "Login changed"
+
+msgid "Доступно"
+msgstr "Available"
+
+msgid "Назначение учебников классам"
+msgstr "Assigning textbooks to classes"
+
+msgid "Нет назначений"
+msgstr "No assignments"
+
+msgid "Математика"
+msgstr "Mathematics"
+
+msgid "Остатки"
+msgstr "Остатки"
+
+msgid "Поиск по названию, предмету или автору..."
+msgstr "Search by title, subject or author..."
+
+msgid "Остатки учебников"
+msgstr "Textbook stock"
+
+msgid "Нет остатков. Добавьте учебник через форму выше."
+msgstr "No stock. Add a textbook via the form above."
+
+msgid "Назначить"
+msgstr "Assign"
+
+msgid "Назначение учебников по предметам"
+msgstr "Assigning textbooks by subject"
+
+msgid "выберите"
+msgstr "select"
+
+msgid "Учебники — Библиотечная система"
+msgstr "Textbooks — Library System"
+
+msgid "Всего"
+msgstr "Total"
