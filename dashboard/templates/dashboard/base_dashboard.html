@@ -38,6 +38,7 @@
     <a href="{% url 'dashboard:manage_schools' %}" class="sidebar-link{% if url_name == 'manage_schools' %} active{% endif %}"><i data-lucide="school" class="icon"></i><span class="label">{% trans "Школы" %}</span></a>
     <a href="{% url 'dashboard:manage_admins' %}" class="sidebar-link{% if url_name == 'manage_admins' %} active{% endif %}"><i data-lucide="users" class="icon"></i><span class="label">{% trans "Админы" %}</span></a>
     <div class="sidebar-group">{% trans "Контент" %}</div>
+    <a href="{% url 'dashboard:textbooks' %}" class="sidebar-link{% if url_name == 'textbooks' %} active{% endif %}"><i data-lucide="book-marked" class="icon"></i><span class="label">{% trans "База учебников" %}</span></a>
     <a href="{% url 'dashboard:news_list' %}" class="sidebar-link{% if url_name == 'news_list' %} active{% endif %}"><i data-lucide="newspaper" class="icon"></i><span class="label">{% trans "Новости" %}</span></a>
     {% endif %}
 
@@ -46,7 +47,9 @@
     <a href="{% url 'dashboard:home' %}" class="sidebar-link{% if url_name == 'home' %} active{% endif %}"><i data-lucide="layout-dashboard" class="icon"></i><span class="label">{% trans "Главная" %}</span></a>
     <a href="{% url 'dashboard:inventory' %}" class="sidebar-link{% if url_name == 'inventory' %} active{% endif %}"><i data-lucide="bar-chart-3" class="icon"></i><span class="label">{% trans "Инвентаризация" %}</span></a>
     <div class="sidebar-group">{% trans "Каталог" %}</div>
-    <a href="{% url 'dashboard:student_catalog' %}" class="sidebar-link{% if url_name == 'student_catalog' %} active{% endif %}"><i data-lucide="book-open" class="icon"></i><span class="label">{% trans "Каталог" %}</span></a>
+    <a href="{% url 'dashboard:textbooks' %}" class="sidebar-link{% if url_name == 'textbooks' %} active{% endif %}"><i data-lucide="book-marked" class="icon"></i><span class="label">{% trans "Учебники" %}</span></a>
+    <a href="{% url 'dashboard:books' %}" class="sidebar-link{% if url_name == 'books' %} active{% endif %}"><i data-lucide="book-open" class="icon"></i><span class="label">{% trans "Книги" %}</span></a>
+    <a href="{% url 'dashboard:student_catalog' %}" class="sidebar-link{% if url_name == 'student_catalog' %} active{% endif %}"><i data-lucide="library" class="icon"></i><span class="label">{% trans "Общий каталог" %}</span></a>
     <a href="{% url 'dashboard:manage_subject_textbooks' %}" class="sidebar-link{% if url_name == 'manage_subject_textbooks' %} active{% endif %}"><i data-lucide="list" class="icon"></i><span class="label">{% trans "Предметы" %}</span></a>
     <div class="sidebar-group">{% trans "Читатели" %}</div>
     <a href="{% url 'dashboard:users' %}" class="sidebar-link{% if url_name == 'users' %} active{% endif %}"><i data-lucide="users" class="icon"></i><span class="label">{% trans "Ученики" %}</span></a>
