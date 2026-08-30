@@ -1373,3 +1373,9 @@ msgstr "Bul kitap qosılmaǵan. Jaqında qosıladı."
 
 msgid "База учебников"
 msgstr "Sabaqlıqlar bazası"
+
+msgid "Экспорт доступов"
+msgstr "Ruxsatnamalardı júklep alıw"
+
+msgid "Скачать логины и пароли"
+msgstr "Login hám parollardı júklep alıw"

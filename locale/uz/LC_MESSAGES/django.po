@@ -1373,3 +1373,9 @@ msgstr "Ushbu kitob qo'shilmagan. Tez kunda qo'shiladi."
 
 msgid "База учебников"
 msgstr "Darsliklar bazasi"
+
+msgid "Экспорт доступов"
+msgstr "Ruxsatlarni yuklab olish"
+
+msgid "Скачать логины и пароли"
+msgstr "Login va parollarni yuklab olish"

@@ -40,12 +40,16 @@ def export_students(request):
         from django.http import HttpResponse
         return HttpResponse(_('Доступ запрещён'), status=403)
     school = request.user.school
-    users = User.objects.filter(school=school, role=User.Role.STUDENT).select_related('grade')
-    rows = [[f'{u.last_name} {u.first_name}', str(u.grade) if u.grade else '', u.login] for u in users]
+    users = User.objects.filter(school=school, role=User.Role.STUDENT).select_related('grade').order_by('grade__number', 'grade__parallel', 'last_name')
+    class_id = request.GET.get('class_id')
+    if class_id:
+        users = users.filter(grade_id=class_id)
+    
+    rows = [[f'{u.last_name} {u.first_name}', str(u.grade) if u.grade else '', u.login, u.temp_password] for u in users]
     return export_to_excel(
-        headers=['ФИО', 'Класс', 'Логин'],
+        headers=['ФИО', 'Класс', 'Логин', 'Пароль'],
         rows=rows,
-        filename='students.xlsx',
+        filename='students_passwords.xlsx',
     )
 
 

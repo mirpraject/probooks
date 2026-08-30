@@ -84,18 +84,20 @@
                                 {% if cls.number >= 5 %}
                                 <a href="{% url 'dashboard:bulk_issue' %}?grade={{ cls.number }}" class="btn btn-sm btn-outline"><i data-lucide="packages" class="icon-sm"></i> {% trans "Массовая выдача" %}</a>
                                 {% endif %}
+                                <a href="{% url 'dashboard:export_students' %}?class_id={{ cls.id }}" class="btn btn-sm btn-ghost" title="{% trans 'Скачать логины и пароли' %}"><i data-lucide="file-spreadsheet" class="icon-sm"></i> {% trans "Экспорт доступов" %}</a>
                             </div>
 
                             {% if students %}
                             <table class="table-compact" style="background:var(--bg-primary);border-radius:var(--radius);">
                                 <thead>
-                                    <tr><th>{% trans "ФИО" %}</th><th>{% trans "Логин" %}</th><th class="text-right">{% trans "Действия" %}</th></tr>
+                                    <tr><th>{% trans "ФИО" %}</th><th>{% trans "Логин" %}</th><th>{% trans "Пароль" %}</th><th class="text-right">{% trans "Действия" %}</th></tr>
                                 </thead>
                                 <tbody>
                                     {% for s in students %}
                                     <tr>
                                         <td><strong>{{ s.last_name }} {{ s.first_name }}</strong></td>
                                         <td class="text-muted text-09">{{ s.login }}</td>
+                                        <td>{% include 'dashboard/users/_pwd_chip.html' with user_obj=s %}</td>
                                         <td class="text-right">
                                             <a href="{% url 'dashboard:issue_textbooks' %}?student_id={{ s.id }}" class="btn btn-sm btn-ghost" title="{% trans 'Выдать' %}"><i data-lucide="send" class="icon-sm"></i></a>
 

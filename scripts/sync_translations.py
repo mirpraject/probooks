@@ -31,6 +31,16 @@ TRANSLATIONS = {
         "kaa": "Sabaqlıqlar",
         "en": "Textbooks"
     },
+    "Экспорт доступов": {
+        "uz": "Ruxsatlarni yuklab olish",
+        "kaa": "Ruxsatnamalardı júklep alıw",
+        "en": "Export accesses"
+    },
+    "Скачать логины и пароли": {
+        "uz": "Login va parollarni yuklab olish",
+        "kaa": "Login hám parollardı júklep alıw",
+        "en": "Download logins and passwords"
+    },
     "Назначение учебников классам": {
         "uz": "Darsliklarni sinflarga biriktirish",
         "kaa": "Sınıflarǵa sabaqlıqlardı biriktiriw",

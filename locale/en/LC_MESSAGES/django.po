@@ -1374,3 +1374,9 @@ msgstr "This book has not been added. It will be added soon."
 
 msgid "База учебников"
 msgstr "Textbook Database"
+
+msgid "Экспорт доступов"
+msgstr "Export accesses"
+
+msgid "Скачать логины и пароли"
+msgstr "Download logins and passwords"
