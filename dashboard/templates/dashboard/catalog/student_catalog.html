@@ -33,7 +33,16 @@
         </div>
     </div>
     {% empty %}
-    <div class="directory-empty col-span-full"><i data-lucide="book-marked" class="icon-3xl icon-faded"></i><p class="mt-1">{% trans "Нет учебников" %}</p></div>
+    <div class="directory-empty col-span-full">
+        <i data-lucide="book-marked" class="icon-3xl icon-faded"></i>
+        <p class="mt-1">
+            {% if q %}
+                {% trans "Ushbu kitob qo'shilmagan. Tez kunda qo'shiladi." %}
+            {% else %}
+                {% trans "Нет учебников" %}
+            {% endif %}
+        </p>
+    </div>
     {% endfor %}
 </div>
 
@@ -59,7 +68,16 @@
         </div>
     </div>
     {% empty %}
-    <div class="directory-empty col-span-full"><i data-lucide="book-open" class="icon-3xl icon-faded"></i><p class="mt-1">{% trans "Нет книг" %}</p></div>
+    <div class="directory-empty col-span-full">
+        <i data-lucide="book-open" class="icon-3xl icon-faded"></i>
+        <p class="mt-1">
+            {% if q %}
+                {% trans "Ushbu kitob qo'shilmagan. Tez kunda qo'shiladi." %}
+            {% else %}
+                {% trans "Нет книг" %}
+            {% endif %}
+        </p>
+    </div>
     {% endfor %}
 </div>
 

@@ -24,7 +24,13 @@
     {% empty %}
     <div class="directory-empty col-span-full">
         <i data-lucide="book" class="icon-3xl icon-faded"></i>
-        <p class="mt-1">{% trans "Нет учебников" %}</p>
+        <p class="mt-1">
+            {% if q %}
+                {% trans "Ushbu kitob qo'shilmagan. Tez kunda qo'shiladi." %}
+            {% else %}
+                {% trans "Нет учебников" %}
+            {% endif %}
+        </p>
     </div>
     {% endfor %}
 </div>
