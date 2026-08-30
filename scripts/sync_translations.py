@@ -108,19 +108,33 @@ TRANSLATIONS = {
     }
 }
 
+import json
+def load_extra_translations():
+    try:
+        with open('translations_new.json', 'r', encoding='utf-8') as f:
+            new_trans = json.load(f)
+            TRANSLATIONS.update(new_trans)
+            print(f"Loaded {len(new_trans)} translations from translations_new.json")
+    except:
+        pass
+
 def extract_trans_strings():
-    pattern = re.compile(r'\{%\s*trans\s+["\']([^"\']+)["\']\s*%\}')
+    pattern_html = re.compile(r'\{%\s*trans\s+["\']([^"\']+)["\']\s*%\}')
+    pattern_py = re.compile(r'_\(["\']([^"\']+)["\']\)')
     extracted = set()
     
-    search_dirs = [os.path.join(BASE_DIR, 'dashboard', 'templates'), os.path.join(BASE_DIR, 'apps')]
+    search_dirs = [os.path.join(BASE_DIR, 'dashboard', 'templates'), os.path.join(BASE_DIR, 'apps'), os.path.join(BASE_DIR, 'dashboard', 'views')]
     for d in search_dirs:
         for root, dirs, files in os.walk(d):
             for f in files:
-                if f.endswith('.html'):
+                if f.endswith('.html') or f.endswith('.py'):
                     path = os.path.join(root, f)
                     with open(path, 'r', encoding='utf-8') as file:
                         content = file.read()
-                        matches = pattern.findall(content)
+                        if f.endswith('.html'):
+                            matches = pattern_html.findall(content)
+                        else:
+                            matches = pattern_py.findall(content)
                         for m in matches:
                             extracted.add(m)
     return extracted
@@ -149,6 +163,7 @@ def update_po_file(lang, missing_strings):
         print(f"[{lang}] All strings are up to date in PO file.")
 
 def main():
+    load_extra_translations()
     extracted = extract_trans_strings()
     print(f"Extracted {len(extracted)} translatable strings from HTML templates.")
     
