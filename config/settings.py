@@ -182,7 +182,9 @@ AUTHENTICATION_BACKENDS = [
 
 # --- Axes ---
 TESTING = 'test' in sys.argv
-AXES_ENABLED = config('AXES_ENABLED', default=True, cast=bool)
+# Disable Axes during tests since it breaks DRF API test logins
+IS_TESTING = 'test' in sys.argv
+AXES_ENABLED = False if IS_TESTING else config('AXES_ENABLED', default=True, cast=bool)
 AXES_FAILURE_LIMIT = 5
 AXES_COOLOFF_TIME = timedelta(minutes=1)
 AXES_RESET_ON_SUCCESS = True
