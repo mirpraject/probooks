@@ -1365,3 +1365,12 @@ msgstr "You have entered an incorrect password too many times. For security reas
 msgid "Попробовать снова"
 msgstr "Try again"
 
+
+msgid "Общий каталог"
+msgstr "General Catalog"
+
+msgid "Эта книга не добавлена. Скоро будет добавлена."
+msgstr "This book has not been added. It will be added soon."
+
+msgid "База учебников"
+msgstr "Textbook Database"

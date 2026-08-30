@@ -6,6 +6,31 @@ LOCALE_DIR = os.path.join(BASE_DIR, 'locale')
 
 # Dictionary of translations for new / missing phrases
 TRANSLATIONS = {
+    "Эта книга не добавлена. Скоро будет добавлена.": {
+        "uz": "Ushbu kitob qo'shilmagan. Tez kunda qo'shiladi.",
+        "kaa": "Bul kitap qosılmaǵan. Jaqında qosıladı.",
+        "en": "This book has not been added. It will be added soon."
+    },
+    "База учебников": {
+        "uz": "Darsliklar bazasi",
+        "kaa": "Sabaqlıqlar bazası",
+        "en": "Textbook Database"
+    },
+    "Общий каталог": {
+        "uz": "Umumiy katalog",
+        "kaa": "Ulıwma katalog",
+        "en": "General Catalog"
+    },
+    "Книги": {
+        "uz": "Kitoblar",
+        "kaa": "Kitaplar",
+        "en": "Books"
+    },
+    "Учебники": {
+        "uz": "Darsliklar",
+        "kaa": "Sabaqlıqlar",
+        "en": "Textbooks"
+    },
     "Назначение учебников классам": {
         "uz": "Darsliklarni sinflarga biriktirish",
         "kaa": "Sınıflarǵa sabaqlıqlardı biriktiriw",

@@ -1364,3 +1364,12 @@ msgstr "Siz ko'p marotaba noto'g'ri parol kiritdingiz. Xavfsizlik maqsadida akka
 msgid "Попробовать снова"
 msgstr "Qaytadan urinib ko'rish"
 
+
+msgid "Общий каталог"
+msgstr "Umumiy katalog"
+
+msgid "Эта книга не добавлена. Скоро будет добавлена."
+msgstr "Ushbu kitob qo'shilmagan. Tez kunda qo'shiladi."
+
+msgid "База учебников"
+msgstr "Darsliklar bazasi"

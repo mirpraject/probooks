@@ -114,10 +114,12 @@
         {% if user.role == 'superadmin' %}
         <a href="{% url 'dashboard:home' %}" class="tab-link{% if url_name == 'home' or not url_name %} active{% endif %}"><i data-lucide="home" class="icon"></i>{% trans "Главная" %}</a>
         <a href="{% url 'dashboard:superadmin' %}" class="tab-link{% if url_name == 'superadmin' %} active{% endif %}"><i data-lucide="bar-chart-3" class="icon"></i>{% trans "Панель" %}</a>
+        <a href="{% url 'dashboard:textbooks' %}" class="tab-link{% if url_name == 'textbooks' %} active{% endif %}"><i data-lucide="book-marked" class="icon"></i>{% trans "Учебники" %}</a>
         <a href="{% url 'dashboard:manage_admins' %}" class="tab-link{% if url_name == 'manage_admins' %} active{% endif %}"><i data-lucide="users" class="icon"></i>{% trans "Админы" %}</a>
         {% elif user.role == 'school_admin' %}
         <a href="{% url 'dashboard:home' %}" class="tab-link{% if url_name == 'home' %} active{% endif %}"><i data-lucide="home" class="icon"></i>{% trans "Главная" %}</a>
-        <a href="{% url 'dashboard:student_catalog' %}" class="tab-link{% if url_name == 'student_catalog' %} active{% endif %}"><i data-lucide="book-open" class="icon"></i>{% trans "Каталог" %}</a>
+        <a href="{% url 'dashboard:textbooks' %}" class="tab-link{% if url_name == 'textbooks' %} active{% endif %}"><i data-lucide="book-marked" class="icon"></i>{% trans "Учебники" %}</a>
+        <a href="{% url 'dashboard:books' %}" class="tab-link{% if url_name == 'books' %} active{% endif %}"><i data-lucide="book-open" class="icon"></i>{% trans "Книги" %}</a>
         <a href="{% url 'dashboard:manage_classes' %}" class="tab-link{% if url_name == 'manage_classes' %} active{% endif %}"><i data-lucide="school" class="icon"></i>{% trans "Классы" %}</a>
         {% elif user.role == 'teacher' %}
         <a href="{% url 'dashboard:home' %}" class="tab-link{% if url_name == 'home' %} active{% endif %}"><i data-lucide="home" class="icon"></i>{% trans "Главная" %}</a>

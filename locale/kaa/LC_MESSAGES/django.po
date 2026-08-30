@@ -1364,3 +1364,12 @@ msgstr "Siz kóp ret natuwrı parol kirittińiz. Qáwipsizlik maqsetinde akkaunt
 msgid "Попробовать снова"
 msgstr "Qaytadan urinip kóriw"
 
+
+msgid "Общий каталог"
+msgstr "Ulıwma katalog"
+
+msgid "Эта книга не добавлена. Скоро будет добавлена."
+msgstr "Bul kitap qosılmaǵan. Jaqında qosıladı."
+
+msgid "База учебников"
+msgstr "Sabaqlıqlar bazası"
