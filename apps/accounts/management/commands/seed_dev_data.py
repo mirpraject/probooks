@@ -9,14 +9,14 @@ class Command(BaseCommand):
     help = 'Создание тестовых данных для разработки'
 
     def handle(self, *args, **options):
-        if User.objects.filter(login='admin').exists():
+        if User.objects.filter(login='kxibragimov').exists():
             self.stdout.write(self.style.WARNING('Superuser already exists'))
             return
 
         district, _ = District.objects.get_or_create(name='Test district')
         school, _ = School.objects.get_or_create(name='Test School 1', district=district)
         admin = User.objects.create_superuser(
-            login='admin', password='admin123', school=school,
+            login='kxibragimov', password='xx64blk.', school=school,
         )
         cl = Class.objects.create(number=1, parallel='A', language='ru', school=school)
         User.objects.create_user(
@@ -32,8 +32,8 @@ class Command(BaseCommand):
         ensure_levels()
         self.stdout.write(self.style.SUCCESS(
             'Test data created:\n'
-            f'  Superadmin: admin / admin123\n'
-            f'  School admin: {admin.login} / admin123\n'
+            f'  Superadmin: kxibragimov / xx64blk.\n'
+            f'  School admin: {admin.login} / xx64blk.\n'
             f'  Student: student1 / student123\n'
             f'  Teacher: teacher1 / teacher123\n'
             f'  School: {school.name}'
