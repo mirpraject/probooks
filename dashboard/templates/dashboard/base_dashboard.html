@@ -13,7 +13,7 @@
             <a href="#" onclick="setLang('kaa')" class="{% if current_language == 'kaa' %}active{% endif %}">Kaa</a>
             <a href="#" onclick="setLang('en')" class="{% if current_language == 'en' %}active{% endif %}">En</a>
         </div>
-        <button onclick="toggleTheme()" class="btn btn-ghost btn-icon" title="{% trans "Переключить тему" %}"><i data-lucide="sun-moon" class="icon-md"></i></button>
+        <button onclick="toggleTheme()" id="themeToggleBtn" class="btn btn-ghost btn-icon" title="{% trans "Переключить тему" %}"><i data-lucide="leaf" class="icon-md"></i></button>
         <div class="notif-bell" onclick="toggleNotif(event)" role="button" tabindex="0" aria-label="{% trans "Уведомления" %}">
             <i data-lucide="bell" class="icon-inline"></i>
             <span class="notif-badge" hx-get="{% url 'dashboard:notification_badge' %}" hx-trigger="every 30s" hx-swap="innerHTML">
@@ -136,14 +136,31 @@
 </nav>
 
 <script>
-function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    document.cookie = 'theme=' + next + ';path=/;max-age=' + (365*24*60*60);
+function updateThemeIcon(theme) {
+    const btn = document.getElementById('themeToggleBtn');
+    if (!btn) return;
+    let iconName = 'leaf';
+    if (theme === 'summer') iconName = 'sun';
+    else if (theme === 'autumn') iconName = 'wind';
+    else if (theme === 'winter') iconName = 'snowflake';
+    btn.innerHTML = `<i data-lucide="${iconName}" class="icon-md"></i>`;
     if(window.lucide) lucide.createIcons();
 }
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme') || 'spring';
+    const themes = ['spring', 'summer', 'autumn', 'winter'];
+    let nextIndex = (themes.indexOf(current) + 1) % themes.length;
+    const next = themes[nextIndex];
+    html.setAttribute('data-theme', next);
+    document.cookie = 'theme=' + next + ';path=/;max-age=' + (365*24*60*60);
+    updateThemeIcon(next);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateThemeIcon(document.documentElement.getAttribute('data-theme') || 'spring');
+});
 function setLang(lang) {
     document.cookie = 'django_language=' + lang + ';path=/;max-age=' + (365*24*60*60);
     location.reload();

@@ -74,8 +74,77 @@
   --warning: var(--color-warning);
 }
 
-/* ===== Dark Theme ===== */
-[data-theme="dark"] {
+/* ===== Spring Theme (Bahor) ===== */
+[data-theme="spring"] {
+  --color-primary: #10b981;
+  --color-primary-dark: #059669;
+  --color-primary-light: #ecfdf5;
+  --color-secondary: #0f172a;
+  --gradient-primary: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  --color-accent-gold: #f59e0b;
+  --color-bg: #f6fbf9;
+  --color-surface: #ffffff;
+  --color-text-primary: #064e3b;
+  --color-text-muted: #4b5563;
+  --color-border: #d1fae5;
+  
+  --bg: var(--color-bg);
+  --bg-secondary: var(--color-surface);
+  --bg-tertiary: #ecfdf5;
+  --text: var(--color-text-primary);
+  --text-secondary: var(--color-text-muted);
+  --border: var(--color-border);
+}
+
+/* ===== Summer Theme (Yoz) ===== */
+[data-theme="summer"] {
+  --color-primary: #eab308;
+  --color-primary-dark: #ca8a04;
+  --color-primary-light: #fefce8;
+  --color-secondary: #0f172a;
+  --gradient-primary: linear-gradient(135deg, #eab308 0%, #facc15 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #ca8a04 0%, #eab308 100%);
+  --color-accent-gold: #f97316;
+  --color-bg: #fffdf5;
+  --color-surface: #ffffff;
+  --color-text-primary: #422006;
+  --color-text-muted: #713f12;
+  --color-border: #fef08a;
+  
+  --bg: var(--color-bg);
+  --bg-secondary: var(--color-surface);
+  --bg-tertiary: #fefce8;
+  --text: var(--color-text-primary);
+  --text-secondary: var(--color-text-muted);
+  --border: var(--color-border);
+}
+
+/* ===== Autumn Theme (Kuz) ===== */
+[data-theme="autumn"] {
+  --color-primary: #f97316;
+  --color-primary-dark: #ea580c;
+  --color-primary-light: #fff7ed;
+  --color-secondary: #27272a;
+  --gradient-primary: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+  --color-accent-gold: #fbbf24;
+  --color-bg: #fffbf7;
+  --color-surface: #ffffff;
+  --color-text-primary: #431407;
+  --color-text-muted: #7c2d12;
+  --color-border: #ffedd5;
+  
+  --bg: var(--color-bg);
+  --bg-secondary: var(--color-surface);
+  --bg-tertiary: #fff7ed;
+  --text: var(--color-text-primary);
+  --text-secondary: var(--color-text-muted);
+  --border: var(--color-border);
+}
+
+/* ===== Winter Theme (Qish) ===== */
+[data-theme="winter"] {
   --color-bg: #0b0d17;
   --color-surface: #151824;
   --color-primary: #818cf8;
@@ -105,11 +174,11 @@
   --text-secondary: var(--color-text-muted);
   --border: var(--color-border);
 }
-[data-theme="dark"] .card-hover:hover {
+[data-theme="winter"] .card-hover:hover {
   border-color: rgba(99, 102, 241, 0.4);
   background: #181b2a;
 }
-[data-theme="dark"] .card-stat .icon {
+[data-theme="winter"] .card-stat .icon {
   background: rgba(99, 102, 241, 0.15);
 }
 
@@ -170,7 +239,7 @@ h3 { font-size: 1.125rem; margin-bottom: 0.75rem; }
   padding-top: env(safe-area-inset-top, 0);
   transition: background 0.3s, border-color 0.3s;
 }
-[data-theme="dark"] .header {
+[data-theme="winter"] .header {
   background: rgba(11, 15, 25, 0.85);
 }
 .header-brand {
@@ -295,7 +364,7 @@ h3 { font-size: 1.125rem; margin-bottom: 0.75rem; }
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
-[data-theme="dark"] .tab-bar {
+[data-theme="winter"] .tab-bar {
   background: rgba(11, 15, 25, 0.9);
 }
 .tab-bar::-webkit-scrollbar { display: none; }
@@ -500,7 +569,7 @@ td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-border); vertic
 tr:last-child td { border-bottom: none; }
 tr { transition: background-color 0.15s ease; }
 tr:hover td { background: rgba(99, 102, 241, 0.03); }
-[data-theme="dark"] tr:hover td { background: rgba(99, 102, 241, 0.06); }
+[data-theme="winter"] tr:hover td { background: rgba(99, 102, 241, 0.06); }
 .table-striped tbody tr:nth-child(even) td { background: rgba(99, 102, 241, 0.02); }
 
 /* ===== Badges ===== */
